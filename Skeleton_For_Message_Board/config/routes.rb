@@ -1,4 +1,6 @@
 MessengerApp::Application.routes.draw do
+  resources :students
+
   resources :portal_admins
 
   get 'messages' => 'messages#index'

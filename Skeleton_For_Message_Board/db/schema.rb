@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160213231400) do
+ActiveRecord::Schema.define(version: 20160213235126) do
 
   create_table "messages", force: true do |t|
     t.text     "content"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 20160213231400) do
   end
 
   create_table "portal_admins", force: true do |t|
+    t.text     "first_name", limit: 25
+    t.text     "last_name",  limit: 25
+    t.text     "email",      limit: 40, default: "", null: false
+    t.text     "password",   limit: 25
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "students", force: true do |t|
     t.text     "first_name", limit: 25
     t.text     "last_name",  limit: 25
     t.text     "email",      limit: 40, default: "", null: false
