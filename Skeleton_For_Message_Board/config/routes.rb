@@ -1,4 +1,6 @@
 MessengerApp::Application.routes.draw do
+  resources :portal_admins
+
   get 'messages' => 'messages#index'
   get 'messages/new' => 'messages#new'
   post 'messages' => 'messages#create'
