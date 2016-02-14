@@ -1,73 +1,71 @@
 class PortalAdminsController < ApplicationController
-  before_action :set_portal_admin, only: [:show, :edit, :update, :destroy]
+ before_action :logged_in
 
-  # GET /portal_admins
-  # GET /portal_admins.json
   def index
-    @portal_admins = PortalAdmin.all
+    @portal_admin = PortalAdmin.find_by_id(session[:id])
   end
 
-  # GET /portal_admins/1
-  # GET /portal_admins/1.json
+
   def show
+    @portal_admin = PortalAdmin.all
   end
 
-  # GET /portal_admins/new
+
   def new
-    @portal_admin = PortalAdmin.new
   end
 
-  # GET /portal_admins/1/edit
-  def edit
-  end
 
-  # POST /portal_admins
-  # POST /portal_admins.json
   def create
+
     @portal_admin = PortalAdmin.new(portal_admin_params)
 
-    respond_to do |format|
-      if @portal_admin.save
-        format.html { redirect_to @portal_admin, notice: 'Portal admin was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @portal_admin }
+    if @portal_admin.save
+        flash[:notice] = "New Admin Created Successfully"
+        redirect_to(:action =>'index', :id => @portal_admin.id.to_s )
       else
-        format.html { render action: 'new' }
-        format.json { render json: @portal_admin.errors, status: :unprocessable_entity }
+        flash[:notice] = "Error: Could not create Admin, Please try Again"
+        redirect_to(:action =>'new')
       end
     end
+
+  def edit
+    @portal_admin = PortalAdmin.find_by_id(session[:id])
   end
 
-  # PATCH/PUT /portal_admins/1
-  # PATCH/PUT /portal_admins/1.json
   def update
-    respond_to do |format|
       if @portal_admin.update(portal_admin_params)
-        format.html { redirect_to @portal_admin, notice: 'Portal admin was successfully updated.' }
-        format.json { head :no_content }
+        flash[:notice] = "Admin was successfully updated."
+        redirect_to(:action =>'index', :id => @portal_admin.id.to_s)
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @portal_admin.errors, status: :unprocessable_entity }
+        flash[:notice] = "Error: Could not Update, Please try Again"
+        redirect_to(:action =>'edit')
       end
+    end
+
+  def delete
+    @portal_admin = PortalAdmin.find_by_id(session[:id])
+    @admin = PortalAdmin.find_by_id(params[:id])
+    if @admin==@portal_admin
+      flash[:notice]="Error: Cannot Delete Yourself!!"
+      redirect_to(:action => 'index', :id => @portal_admin.id.to_s)
+    else
+      redirect_to(:action =>'destroy',:id => @admin.id.to_s)
     end
   end
 
-  # DELETE /portal_admins/1
-  # DELETE /portal_admins/1.json
   def destroy
-    @portal_admin.destroy
-    respond_to do |format|
-      format.html { redirect_to portal_admins_url }
-      format.json { head :no_content }
-    end
+    @admin=PortalAdmin.find_by_id(params[:id])
+    @admin.destroy
+    flash[:notice] = "Deleted Successfully"
+    redirect_to(:action => 'index')
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
     def set_portal_admin
       @portal_admin = PortalAdmin.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def portal_admin_params
       params[:portal_admin]
     end

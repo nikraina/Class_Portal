@@ -29,6 +29,9 @@ class LoginController < ApplicationController
         flash[:notice] = "Invalid email or Password"
               redirect_to(:action => 'login')
       end
+      else
+      flash[:notice] = "Error: Please Enter Email & Password"
+      redirect_to(:action => 'login')
     end
   end
   def logout

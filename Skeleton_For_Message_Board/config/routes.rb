@@ -7,9 +7,8 @@ ClassPortal::Application.routes.draw do
 
   resources :portal_admins
   root 'home#index'
-  get 'messages' => 'messages#index'
-  get 'messages/new' => 'messages#new'
-  post 'messages' => 'messages#create'
+
+  match ':controller(/:action(/:id))', :via => [:get, :post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

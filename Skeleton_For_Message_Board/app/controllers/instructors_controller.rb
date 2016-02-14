@@ -1,5 +1,5 @@
 class InstructorsController < ApplicationController
-  before_action :set_instructor, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in, only: [:show, :edit, :update, :destroy]
 
   # GET /instructors
   # GET /instructors.json

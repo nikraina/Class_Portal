@@ -1,25 +1,7 @@
-<h1>Listing portal_admins</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @portal_admins.each do |portal_admin| %>
-      <tr>
-        <td><%= link_to 'Show', portal_admin %></td>
-        <td><%= link_to 'Edit', edit_portal_admin_path(portal_admin) %></td>
-        <td><%= link_to 'Destroy', portal_admin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Portal admin', new_portal_admin_path %>
+<h1>Admin Home Page</h1>
+<h3>Links to different functions will be created</h3>
+<%=link_to('Add a new Admin',:controller =>'portal_admins',:action =>'new' ) %>
+<%=link_to('View Admins',:controller => 'portal_admins',:action =>'show' ) %>
+<%=link_to('Update Profile',:controller => 'portal_admins',:action =>'edit' ) %>
+<%=link_to('Delete Admins',:controller => 'portal_admins',:action =>'delete' ) %>
+<%=link_to('logout',:controller => 'login',:action =>'logout' ) %>
