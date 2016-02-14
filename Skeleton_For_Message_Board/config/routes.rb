@@ -1,4 +1,6 @@
 MessengerApp::Application.routes.draw do
+  resources :instructors
+
   resources :students
 
   resources :portal_admins
