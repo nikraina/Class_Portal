@@ -6,6 +6,7 @@ class CreateInstructors < ActiveRecord::Migration
       t.text "email", :default =>"", :null=>false, :limit => 40
       t.text "password", :limit => 25
       t.timestamps
+      t.references :courses
     end
   end
 end

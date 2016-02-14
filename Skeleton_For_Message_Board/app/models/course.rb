@@ -1,4 +1,6 @@
 class Course < ActiveRecord::Base
+  has_and_belongs_to_many :students
+  has_and_belongs_to_many :instructors
   validates_presence_of :course_number
   validates_presence_of :title
   validates_presence_of :status

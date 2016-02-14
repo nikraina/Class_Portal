@@ -8,6 +8,8 @@ class CreateCourses < ActiveRecord::Migration
       t.datetime "start_date"
       t.datetime "end_date"
       t.timestamps
+      t.references :students
+      t.references :instructors
     end
   end
 end
