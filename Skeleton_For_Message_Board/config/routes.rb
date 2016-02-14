@@ -1,4 +1,4 @@
-MessengerApp::Application.routes.draw do
+ClassPortal::Application.routes.draw do
   resources :courses
 
   resources :instructors
@@ -6,15 +6,13 @@ MessengerApp::Application.routes.draw do
   resources :students
 
   resources :portal_admins
-
+  root 'home#index'
   get 'messages' => 'messages#index'
   get 'messages/new' => 'messages#new'
   post 'messages' => 'messages#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

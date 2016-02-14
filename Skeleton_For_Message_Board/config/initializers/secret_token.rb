@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MessengerApp::Application.config.secret_key_base = 'd0207c0a155fd76b410924f0053d02baa8b004e61a87c123599a5e1f3f2181cecaab2e2d95576ca4beabf1f37aeaeeb1bb180879fdd2134bbdc260b5fd805836'
+ClassPortal::Application.config.secret_key_base = 'd0207c0a155fd76b410924f0053d02baa8b004e61a87c123599a5e1f3f2181cecaab2e2d95576ca4beabf1f37aeaeeb1bb180879fdd2134bbdc260b5fd805836'

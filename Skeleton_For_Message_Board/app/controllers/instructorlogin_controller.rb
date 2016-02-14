@@ -1,0 +1,2 @@
+class InstructorloginController < ApplicationController
+end
