@@ -1,5 +1,15 @@
-<h1>New portal_admin</h1>
+<h1>Delete portal_admin</h1>
 
 <%= link_to('Admin Home Page',:controller =>'portal_admins',:action => 'index' ) %>
 
-<%= %>
+<%=	 form_tag(:action => 'delete') %>
+<table>
+  <tr>
+    <td><%= label_tag(:first_name, "Enter First Name :") %></td>
+    <td><%= text_field_tag(:first_name) %></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><%= submit_tag("Delete") %></td>
+  </tr>
+</table>

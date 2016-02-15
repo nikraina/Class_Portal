@@ -1,4 +1,18 @@
-<h1>New portal_admin</h1>
+<h1>Show portal_admin</h1>
 
 <%= link_to('Admin Home Page',:controller =>'portal_admins',:action => 'index' ) %>
 
+<table class="table">
+  <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email id</th>
+  </tr>
+  <%= @portal_admin.each do |t|  %>
+  <tr>
+        <td><%=	t.first_name  %></td>
+        <td><%=	t.last_name  %></td>
+        <td><%=	t.email  %></td>
+  </tr>
+  <%=end %>
+</table>

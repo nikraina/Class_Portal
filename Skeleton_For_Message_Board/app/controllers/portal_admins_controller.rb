@@ -45,7 +45,7 @@ class PortalAdminsController < ApplicationController
 
   def delete
     @portal_admin = PortalAdmin.find_by_id(session[:id])
-    @admin = PortalAdmin.find_by_id(params[:id])
+    @admin = PortalAdmin.where(:first_name => params[:first_name]).first
     if @admin==@portal_admin
       flash[:notice]="Error: Cannot Delete Yourself!!"
       redirect_to(:action => 'index', :id => @portal_admin.id.to_s)
