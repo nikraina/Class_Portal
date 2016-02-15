@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails Skeleton_For_Message_Board: development" uuid="07a2e5c0-ba89-4b6b-85ee-c98861b0b7ef">
+      <auth-required>false</auth-required>
+      <schema-pattern>*</schema-pattern>
+    </data-source>
+  </component>
+</project>

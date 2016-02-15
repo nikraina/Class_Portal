@@ -16,9 +16,7 @@ class PortalAdminsController < ApplicationController
 
 
   def create
-
     @portal_admin = PortalAdmin.new(portal_admin_params)
-
     if @portal_admin.save
         flash[:notice] = "New Admin Created Successfully"
         redirect_to(:action =>'index', :id => @portal_admin.id.to_s )
@@ -28,9 +26,11 @@ class PortalAdminsController < ApplicationController
       end
     end
 
+
   def edit
     @portal_admin = PortalAdmin.find_by_id(session[:id])
   end
+
 
   def update
       if @portal_admin.update(portal_admin_params)
@@ -41,6 +41,7 @@ class PortalAdminsController < ApplicationController
         redirect_to(:action =>'edit')
       end
     end
+
 
   def delete
     @portal_admin = PortalAdmin.find_by_id(session[:id])
@@ -53,12 +54,14 @@ class PortalAdminsController < ApplicationController
     end
   end
 
+
   def destroy
     @admin=PortalAdmin.find_by_id(params[:id])
     @admin.destroy
     flash[:notice] = "Deleted Successfully"
     redirect_to(:action => 'index')
   end
+
 
   private
 
