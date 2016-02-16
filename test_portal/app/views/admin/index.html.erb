@@ -1,3 +1,5 @@
 <h>Admin Homepage</h>
 <%=link_to('Add New Users',:controller => 'users',:action =>'new' ) %>
 <%=link_to('logout',:controller => 'home',:action =>'show' ) %>
+<%=link_to('Display Users',:controller => 'admin',:action =>'show_profiles' ) %>
+<%=link_to('Edit Profile', :controller => 'users',:action =>'edit' ) %>
