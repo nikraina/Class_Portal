@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+
   end
 
   # POST /users
@@ -26,15 +27,19 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    respond_to do |format|
+    #respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+        #format.html { redirect_to @user, notice: 'User was successfully created.' }
+        #format.json { render :show, status: :created, location: @user }
+        flash[:notice]="User was successfully created."
+        redirect_to(:controller => 'admin', :action => 'show_profiles')
       else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        #format.html { render :new }
+        #format.json { render json: @user.errors, status: :unprocessable_entity }
+        flash[:notice]="User couldnot be created !!"
+        redirect_to(:controller => 'users', :action => 'new')
       end
-    end
+    #end
   end
 
   # PATCH/PUT /users/1
@@ -54,18 +59,35 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    #DONOT allow self or ADMIN deletion
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
-      format.json { head :no_content }
+    @portal_admin = User.find(session[:id])
+    @admin = User.find(params[:id])
+    if @admin==@portal_admin
+      flash[:notice]="Error: Cannot Delete Yourself!!"
+      redirect_to(:controller => 'admin', :action => 'show_profiles')
+    else
+      @user.destroy
+      redirect_to(:controller => 'admin', :action => 'show_profiles')
     end
+    #DONOT allow self or ADMIN deletion
+
+    #respond_to do |format|
+    #  format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+    #  format.json { head :no_content }
+    #end
+
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      #@user = User.find(params[:id])
+      #THINK about a better way to handle this
+      begin
+        @user = User.find(params[:id])
+      rescue =>ex
+        @user = User.find(session[:id])
+      end
+
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  #has_many :courses
+  has_many :courses
   validates_presence_of :email, :password
   validates :email, uniqueness: true
   #validate sthe format of the email
