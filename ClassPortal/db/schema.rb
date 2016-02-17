@@ -11,10 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160216222443) do
+ActiveRecord::Schema.define(version: 20160217062555) do
 
-# Could not dump table "courses" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  create_table "courses", force: true do |t|
+    t.string   "course_id",   limit: 100, null: false
+    t.string   "title",       limit: 100
+    t.string   "description", limit: 100
+    t.string   "materials"
+    t.boolean  "is_active"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "instructor_courses", force: true do |t|
+    t.string   "course_id",  limit: 100, null: false
+    t.string   "email",      limit: 100, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "student_courses", force: true do |t|
+    t.string  "course_id",        limit: 100, null: false
+    t.string  "email",            limit: 100, null: false
+    t.string  "grade",            limit: 1
+    t.boolean "is_curr_enrolled"
+    t.boolean "has_requested"
+    t.boolean "is_denied"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",         limit: 100

@@ -6,6 +6,8 @@ class AdminController < ApplicationController
 
   def show
     @users = User.all
+    @courses = Course.all
+    @student_courses = StudentCourse.all
   end
 
 

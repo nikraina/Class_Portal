@@ -1,0 +1,31 @@
+<h1>Editing Instructor Courses</h1>
+
+<% @user = User.find(session[:id])%>
+<% @instructor_course = InstructorCourse.find(params[:id]) %>
+<%= form_for(@instructor_course) do |f| %>
+    <% if @user.is_admin %>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id %>
+        </div>
+
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+
+    <% end %>
+
+
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+
+<% if @user.is_admin %>
+    <%= link_to('Back', :controller => 'admin' , :action => 'index')%>
+<% else%>
+    <%= link_to('Back', :controller => 'instructor' , :action => 'index')%>
+<%end%>
+

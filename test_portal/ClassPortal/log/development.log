@@ -1,0 +1,2594 @@
+
+
+Started GET "/courses/1/edit" for 127.0.0.1 at 2016-02-16 20:03:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered courses/edit.html.erb within layouts/application (86.2ms)
+Completed 200 OK in 741ms (Views: 729.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:19 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:26 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:29 -0500
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"a", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'a' ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:34 -0500
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:03:39 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2016-02-16 20:03:43 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered courses/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/1/edit" for 127.0.0.1 at 2016-02-16 20:03:45 -0500
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered courses/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/courses/1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+Processing by CoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "course"=>{"course_id"=>"521", "title"=>"0dd", "description"=>"odd", "start_date(1i)"=>"2016", "start_date(2i)"=>"6", "start_date(3i)"=>"1", "end_date(1i)"=>"2016", "end_date(2i)"=>"5", "end_date(3i)"=>"16", "is_active"=>"true", "materials"=>"ruby mine"}, "commit"=>"Update Course", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCourse Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "courses" WHERE ("courses"."course_id" = '521' AND "courses"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (40.3ms)[0m  UPDATE "courses" SET "course_id" = ?, "updated_at" = ? WHERE "courses"."id" = 1  [["course_id", "521"], ["updated_at", Wed, 17 Feb 2016 01:03:50 UTC +00:00]]
+  [1m[36m (155.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/courses/1
+Completed 302 Found in 317ms (ActiveRecord: 196.1ms)
+
+
+Started GET "/courses/1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered courses/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:03:50 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:03:53 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:08:37 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 42ms (Views: 36.1ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://0.0.0.0:3000/admin/1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:08:44 -0500
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2016-02-16 20:08:48 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (22.8ms)[0m  [1mDELETE FROM "courses_users" WHERE "courses_users"."user_id" = 3[0m
+SQLite3::SQLException: no such table: courses_users: DELETE FROM "courses_users" WHERE "courses_users"."user_id" = 3
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 87ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: courses_users: DELETE FROM "courses_users" WHERE "courses_users"."user_id" = 3):
+  app/controllers/users_controller.rb:54:in `destroy'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.4ms)
+
+
+Started DELETE "/users/3" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36m (157.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/admin/3
+Completed 302 Found in 186ms (ActiveRecord: 158.4ms)
+
+
+Started GET "/admin/3" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:11:37 -0500
+
+
+Started GET "/admin/3" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:28 -0500
+
+
+Started GET "/admin/3" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:14:30 -0500
+
+
+Started GET "/admin/3" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:15:00 -0500
+
+
+Started DELETE "/courses/2" for 127.0.0.1 at 2016-02-16 20:15:06 -0500
+Processing by CoursesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "id"=>"2"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/courses_controller.rb:50:in `destroy'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started DELETE "/courses/1" for 127.0.0.1 at 2016-02-16 20:16:02 -0500
+Processing by CoursesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "id"=>"1"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM "courses_users" WHERE "courses_users"."course_id" = 1
+SQLite3::SQLException: no such table: courses_users: DELETE FROM "courses_users" WHERE "courses_users"."course_id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 14ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: courses_users: DELETE FROM "courses_users" WHERE "courses_users"."course_id" = 1):
+  app/controllers/courses_controller.rb:51:in `destroy'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started DELETE "/courses/1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+Processing by CoursesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "id"=>"1"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "courses" WHERE "courses"."id" = ?  [["id", 1]]
+  [1m[36m (193.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/admin/1
+Completed 302 Found in 207ms (ActiveRecord: 193.9ms)
+
+
+Started GET "/admin/1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:16:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCoursesUsers (20160217012745)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "courses_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" varchar(100) NOT NULL, "email" varchar(100) NOT NULL, "grade" varchar(1), "is_curr_enrolled" boolean) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160217012745"]]
+  [1m[36m (162.1ms)[0m  [1mcommit transaction[0m
+Migrating to EditUsers (20160217012812)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(100), "password" varchar(100), "name" varchar(100), "is_admin" boolean, "is_instructor" boolean, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160217012812"]]
+  [1m[35m (130.5ms)[0m  commit transaction
+Migrating to EditCourses (20160217012943)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "courses"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" varchar(100) NOT NULL, "title" varchar(100), "description" varchar(100), "materials" varchar(255), "is_active" bool, "start_date" date, "end_date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160217012943"]]
+  [1m[36m (140.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/admin/1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:31:41 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:31:48 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/admin_controller.rb:4:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:31:48 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/admin_controller.rb:4:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:31:56 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/admin_controller.rb:4:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:31:56 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/admin_controller.rb:4:in `index'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:04 -0500
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"abc", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'abc' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:32:08 -0500
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"abc", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc' ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:39 -0500
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:33:43 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2016-02-16 20:33:47 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+Redirected to http://0.0.0.0:3000/admin/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/1" for 127.0.0.1 at 2016-02-16 20:33:47 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:33:48 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:33:52 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:33:54 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:35:05 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `boolean' for #<ActionView::Helpers::FormBuilder:0x007fba949d06b0>):
+    15:     </div>
+    16:     <div class="field">
+    17:       <%= f.label(:is_admin,'Admin ??') %><br>
+    18:       <%= f.boolean(:is_admin) %>
+    19:     </div>
+    20:     <div class="field">
+    21:       <%= f.label(:is_instructor,'Instructor ??') %><br>
+  app/views/users/new.html.erb:18:in `block in _app_views_users_new_html_erb__4604279450377218388_70219665749940'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__4604279450377218388_70219665749940'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"abc", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'abc' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:35:13 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:36:15 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:36:19 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `bool' for #<ActionView::Helpers::FormBuilder:0x007fba841168e0>):
+    15:     </div>
+    16:     <div class="field">
+    17:       <%= f.label(:is_admin,'Admin ??') %><br>
+    18:       <%= f.bool(:is_admin) %>
+    19:     </div>
+    20:     <div class="field">
+    21:       <%= f.label(:is_instructor,'Instructor ??') %><br>
+  app/views/users/new.html.erb:18:in `block in _app_views_users_new_html_erb__4604279450377218388_70219664310140'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__4604279450377218388_70219664310140'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:36:19 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `bool' for #<ActionView::Helpers::FormBuilder:0x007fba94414208>):
+    15:     </div>
+    16:     <div class="field">
+    17:       <%= f.label(:is_admin,'Admin ??') %><br>
+    18:       <%= f.bool(:is_admin) %>
+    19:     </div>
+    20:     <div class="field">
+    21:       <%= f.label(:is_instructor,'Instructor ??') %><br>
+  app/views/users/new.html.erb:18:in `block in _app_views_users_new_html_erb__4604279450377218388_70219665874920'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__4604279450377218388_70219665874920'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:37:48 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "user"=>{"email"=>"instructor", "name"=>"instructor", "password"=>"[FILTERED]", "is_admin"=>"1", "is_instructor"=>""}, "commit"=>"Save User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'instructor' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "is_admin", "name", "password", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Feb 2016 01:38:15 UTC +00:00], ["email", "instructor"], ["is_admin", true], ["name", "instructor"], ["password", "instructor"], ["updated_at", Wed, 17 Feb 2016 01:38:15 UTC +00:00]]
+  [1m[36m (270.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/admin/show
+Completed 302 Found in 278ms (ActiveRecord: 270.8ms)
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:15 -0500
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:38:29 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:29 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:30 -0500
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:31 -0500
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:32 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:38:42 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:38:44 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-02-16 20:38:55 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "user"=>{"email"=>"student", "name"=>"student", "password"=>"[FILTERED]", "is_admin"=>"0", "is_instructor"=>""}, "commit"=>"Save User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'student' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "is_admin", "name", "password", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 17 Feb 2016 01:38:55 UTC +00:00], ["email", "student"], ["is_admin", false], ["name", "student"], ["password", "student"], ["updated_at", Wed, 17 Feb 2016 01:38:55 UTC +00:00]]
+  [1m[36m (271.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/admin/show
+Completed 302 Found in 275ms (ActiveRecord: 271.9ms)
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:56 -0500
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:38:59 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:39:17 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:39:19 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"student", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'student' ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://0.0.0.0:3000/student
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+Processing by StudentController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered student/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:25 -0500
+
+
+Started GET "/users/3" for 127.0.0.1 at 2016-02-16 20:39:27 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2016-02-16 20:39:32 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2016-02-16 20:39:39 -0500
+Processing by StudentController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered student/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:39:41 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"abc", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc' ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:39:48 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:39:49 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:40:02 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:40:04 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:40:21 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:40:30 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to EditUsersV1 (20160217014433)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(100), "password" varchar(100), "name" varchar(100), "is_admin" boolean, "is_instructor" boolean, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160217014433"]]
+  [1m[35m (141.8ms)[0m  commit transaction
+Migrating to EditCoursesV1 (20160217014756)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "courses"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" varchar(100) NOT NULL, "title" varchar(100), "description" varchar(100), "materials" varchar(255), "is_active" boolean, "start_date" date, "end_date" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160217014756"]]
+  [1m[36m (163.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 24ms (Views: 16.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:49:04 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:49:06 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:49:08 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"abc", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'abc' ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:29 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-16 20:54:31 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "user"=>{"email"=>"ins", "name"=>"ins", "password"=>"[FILTERED]", "is_admin"=>"0", "is_instructor"=>"1"}, "commit"=>"Save User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'ins' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "is_admin", "is_instructor", "name", "password", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 17 Feb 2016 01:54:49 UTC +00:00], ["email", "ins"], ["is_admin", false], ["is_instructor", true], ["name", "ins"], ["password", "ins"], ["updated_at", Wed, 17 Feb 2016 01:54:49 UTC +00:00]]
+  [1m[35m (266.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/admin/show
+Completed 302 Found in 273ms (ActiveRecord: 267.0ms)
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:54:49 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:54:53 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:54:55 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"ins", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ins' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/instructor
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+Processing by InstructorController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered instructor/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:01 -0500
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-02-16 20:55:03 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2016-02-16 20:55:08 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-16 20:55:14 -0500
+Processing by InstructorController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered instructor/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-16 20:55:26 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9zcOXTNkEG9Iz6WZV68hqMc+r9E1gQ7P5zn4DIL2Myk=", "email"=>"abc", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'abc' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/admin
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered admin/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-16 20:55:35 -0500
+
+
+Started GET "/admin/show" for 127.0.0.1 at 2016-02-16 20:55:59 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeleteCoursesUsers (20160217020703)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "courses_users"[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160217020703"]]
+  [1m[36m (168.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

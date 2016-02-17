@@ -1,0 +1,7 @@
+<h>Admin Homepage</h>
+<% @user = User.find(session[:id])%>
+<%=link_to('Add New Users',:controller => 'users',:action =>'new' ) %>
+<%=link_to('Add New Courses',:controller => 'courses',:action =>'new' ) %>
+<%= link_to('logout',:controller => 'home', :action => 'login' ) %>
+<%= link_to('Display all Users & Courses',:controller => 'admin',:action =>'show' ) %>
+<%=link_to('Edit Profile',@user, :controller => 'users',:action =>'edit')  %>

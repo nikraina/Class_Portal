@@ -1,25 +1,93 @@
-<hi>Display All Users</hi>
-<table>
-  <thead>
-  <tr>
-    <th>  E-mail  </th>
-    <th>  Name  </th>
-    <th>  Is Admin??  </th>
-    <th>  Is Instructor??  </th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @users.each do |user| %>
+<% if params[:viewusers] %>
+    <hi>Display All Users</hi>
+    <table>
+      <thead>
       <tr>
-        <td><%= user.email %><br></td>
-        <td><%= user.name %><br></td>
-        <td><%= user.is_admin %><br></td>
-        <td><%= user.is_instructor %><br></td>
-        <td><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>  E-mail  </th>
+        <th>  Name  </th>
+        <th>  Is Admin??  </th>
+        <th>  Is Instructor??  </th>
       </tr>
-  <% end %>
-  </tbody>
-</table>
+      </thead>
+
+    <tbody>
+    <% @users.each do |user| %>
+        <tr>
+          <td><%= user.email %><br></td>
+          <td><%= user.name %><br></td>
+          <td><%= user.is_admin %><br></td>
+          <td><%= user.is_instructor %><br></td>
+          <td><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%></td>
+          <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+    <% end %>
+    </tbody>
+    </table>
+
+<%elsif params[:viewcourses] %>
+    <hi>Display All Courses</hi>
+    <table>
+      <thead>
+      <tr>
+        <th>  Course No.  </th>
+        <th>  Title  </th>
+        <th>  Description  </th>
+        <th>  Materials  </th>
+        <th>  Is Active??  </th>
+        <th>  Start Date  </th>
+        <th>  End Date  </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @courses.each do |course| %>
+          <tr>
+            <td><%= course.course_id %><br></td>
+            <td><%= course.title %><br></td>
+            <td><%= course.description %><br></td>
+            <td><%= course.materials %><br></td>
+            <td><%= course.is_active %><br></td>
+            <td><%= course.start_date %><br></td>
+            <td><%= course.end_date %><br></td>
+            <td><%= link_to 'Edit',course, :controller => 'courses', :action => 'edit'%></td>
+            <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+<%elsif params[:viewenrollment] %>
+    <hi>Display All Student Course Enrollments</hi>
+    <table>
+      <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Student Email</th>
+        <th>Grade</th>
+        <th>Is Enrolled</th>
+        <th>Has Requested Enrollment</th>
+        <th>Enrollment Denied</th>
+      </tr>
+      </thead>
+      <!% @user = User.find(session[:id]) %>
+      <tbody>
+
+      <% @student_courses.each do |student_course| %>
+          <%if student_course.has_requested %>
+              <tr>
+                <td><%= student_course.course_id %><br></td>
+                <td><%= student_course.email %><br></td>
+                <td><%= student_course.grade %><br></td>
+                <td><%= student_course.is_curr_enrolled %><br></td>
+                <td><%= student_course.has_requested %><br></td>
+                <td><%= student_course.is_denied %><br></td>
+                <td><%= link_to 'Edit', student_course, action: 'edit'%></td>
+                <td><%= link_to 'Destroy', student_course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+          <%end %>
+      <% end %>
+      </tbody>
+    </table>
+
+<%end %>
 <%= link_to('Back', :controller => 'admin' , :action => 'index')%>

@@ -1,4 +1,8 @@
 Project::Application.routes.draw do
+  resources :instructor_courses
+
+  resources :student_courses
+
   resources :courses
 
   resources :users
@@ -6,6 +10,7 @@ Project::Application.routes.draw do
   resources :instructor
   resources :student
   resources :home
+
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.
