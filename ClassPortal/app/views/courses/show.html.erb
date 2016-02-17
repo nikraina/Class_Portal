@@ -1,0 +1,74 @@
+<hi>Display All Courses</hi>
+<table>
+  <thead>
+  <tr>
+    <th>  Course No.  </th>
+    <th>  Title  </th>
+    <th>  Description  </th>
+    <th>  Start Date  </th>
+    <th>  End Date  </th>
+    <th>  Is Active??  </th>
+    <th>  Materials  </th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @courses.each do |course| %>
+      <tr>
+        <%= form_for(course) do |f| %>
+        <td><%= f.text_field :course_id %><br></td>
+        <td><%= f.text_field :title %><br></td>
+        <td><%= f.text_field :description %><br></td>
+        <td><%= f.date_select :start_date %><br></td>
+        <td><%= f.date_select :end_date %><br></td>
+        <td><%= f.text_field :is_active %><br></td>
+        <td><%= f.text_field :materials %><br></td>
+        <td><%= f.submit %></td>
+        <td><!%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<%= link_to('Back', :controller => 'admin' , :action => 'index')%>
+
+<!--
+<h1>Course  </h1>
+<table>
+  <thead>
+  <tr>
+    <th>  Course No.  </th>
+    <th>  Title  </th>
+    <th>  Description  </th>
+    <th>  Materials  </th>
+    <th>  Is Active??  </th>
+    <th>  Start Date  </th>
+    <th>  End Date  </th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <!% @course=Course.all %>
+  <!% @user1=User.find(session[:id]) %>
+  <tr>
+    <td><!%= @course.course_id %><br></td>
+    <td><1%= @course.title %><br></td>
+    <td><!%= @course.description %><br></td>
+    <td><!%= @course.materials %><br></td>
+    <td><!%= @course.is_active %><br></td>
+    <td><!%= @course.start_date %><br></td>
+    <td><!%= @course.end_date %><br></td>
+  </tr><
+  </tbody>
+</table>
+<!%= link_to('Edit', :controller => 'courses' , :action => 'edit')%>
+<!% if @user1.is_admin %>
+    <!%= link_to('Back to Display All users', :controller => 'admin' , :action => 'show')%>
+    <!%= link_to('Homepage', :controller => 'admin' , :action => 'index')%>
+<!% elsif @user1.is_instructor%>
+    <!%= link_to('Back', :controller => 'instructor' , :action => 'index')%>
+<!%else %>
+    <!%= link_to('Back', :controller => 'student' , :action => 'index')%>
+<!%end%>
+-->
