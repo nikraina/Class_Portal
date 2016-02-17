@@ -1,0 +1,25 @@
+<hi>Display All Users</hi>
+<table>
+  <thead>
+  <tr>
+    <th>  E-mail  </th>
+    <th>  Name  </th>
+    <th>  Is Admin??  </th>
+    <th>  Is Instructor??  </th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %><br></td>
+        <td><%= user.name %><br></td>
+        <td><%= user.is_admin %><br></td>
+        <td><%= user.is_instructor %><br></td>
+        <td><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+<%= link_to('Back', :controller => 'admin' , :action => 'index')%>

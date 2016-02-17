@@ -1,0 +1,48 @@
+<h1>Editing user</h1>
+
+<% @user_1 = User.find(params[:id])%>
+<% @user_2 = User.find(session[:id])%>
+<%= form_for(@user_1) do |f| %>
+
+
+<div class="field">
+  <%= f.label :email %><br>
+  <%= f.text_field :email %>
+</div>
+<div class="field">
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+</div>
+<div class="field">
+  <% if @user_1 == @user_2 %>
+      <%= f.label :password %><br>
+      <%= f.text_field :password %>
+  <% end %>
+<br>
+</div>
+
+<% if @user_2.is_admin %>
+    <div class="field">
+      <%= f.label :is_admin %><br>
+      <%= f.text_field :is_admin %>
+    </div>
+
+    <div class="field">
+      <%= f.label :is_instructor %><br>
+      <%= f.text_field :is_instructor %>
+    </div>
+<%end %>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>
+
+<% @user_1 = User.find(session[:id]) %>
+<% if @user_1.is_admin %>
+    <%= link_to('Back', :controller => 'admin' , :action => 'index')%>
+<% elsif @user_1.is_instructor%>
+    <%= link_to('Back', :controller => 'instructor' , :action => 'index')%>
+<%else %>
+    <%= link_to('Back', :controller => 'student' , :action => 'index')%>
+<%end%>
+
