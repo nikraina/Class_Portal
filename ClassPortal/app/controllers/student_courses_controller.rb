@@ -5,9 +5,7 @@ class StudentCoursesController < ApplicationController
   # GET /student_courses.json
   def index
     @student_courses = StudentCourse.all
-    if params[:indexcontroller]
-      @student_courses = StudentCourse.map { |x| x if x.has_requested} #all.where('has_requested' => true)
-    end
+    #@viewspecific = params[:viewspecific]
   end
 
   # GET /student_courses/1

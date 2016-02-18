@@ -5,6 +5,10 @@ class InstructorController < ApplicationController
 
   end
 
+  def show
+    @student_courses = StudentCourse.all
+  end
+
   private
 
   def set_user

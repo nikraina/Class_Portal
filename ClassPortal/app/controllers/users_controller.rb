@@ -45,15 +45,19 @@ class UsersController < ApplicationController
 
 
   def destroy
-    @admin = User.find(session[:id])
-    @admin1 = User.find(params[:id])
-    if @admin==@admin1
+    @currentuser= User.find(session[:id])
+    @user = User.find(params[:id])
+    if @currentuser==@user
       flash[:notice]="Error: Cannot Delete Yourself!!"
-      redirect_to(:controller => 'admin', :action => 'show')
+      #redirect_to(:controller => 'admin', :action => 'show', :viewusers =>true)
+    elsif @user.email == 'master@master.com'
+      flash[:notice]="Error: Cannot Delete Master Yoda!!"
+      #redirect_to(:controller => 'admin', :action => 'show' , :viewusers =>true)
     else
-      @admin1.destroy
-      redirect_to(:controller => 'admin', :action => 'show')
+      @user.destroy
+      #redirect_to(:controller => 'admin', :action => 'show', :viewusers =>true)
     end
+    redirect_to(:controller => 'admin', :action => 'show', :viewusers =>true)
   end
 
   private

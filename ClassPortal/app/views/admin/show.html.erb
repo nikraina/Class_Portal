@@ -82,7 +82,9 @@
                 <td><%= student_course.has_requested %><br></td>
                 <td><%= student_course.is_denied %><br></td>
                 <td><%= link_to 'Edit', student_course, action: 'edit'%></td>
+                <td><%= link_to 'History', controller: 'student_courses', action:  'index' , :viewspecific => true , :email => student_course.email %></td>
                 <td><%= link_to 'Destroy', student_course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
               </tr>
           <%end %>
       <% end %>
