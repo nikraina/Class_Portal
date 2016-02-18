@@ -1,13 +1,28 @@
-<h>Admin Homepage</h>
 <% @user = User.find(session[:id])%>
-<%=link_to('Add New Users',:controller => 'users',:action =>'new' ) %>
-<%=link_to('Add New Courses',:controller => 'courses',:action =>'new' ) %>
-<%= link_to('logout',:controller => 'home', :action => 'login' ) %>
-<%= link_to('Display all Users',:controller => 'admin',:action =>'show', :viewusers =>true) %>
-<%= link_to('Display all Courses',:controller => 'admin',:action =>'show', :viewcourses =>true ) %>
-<%=link_to('Edit Profile',@user, :controller => 'users',:action =>'edit')  %>
-<%=link_to('Enrollment',:controller => 'student_courses',:action =>'new')  %>
-<%=link_to('View All Student Courses Requests',:controller => 'student_courses',:action =>'index')  %>
-<%=link_to('View Enrollment Requests', :controller => 'admin',:action =>'show', :viewenrollment => true)  %>
-<%=link_to('Add New Instructor Courses',:controller => 'instructor_courses',:action =>'new')  %>
-<%=link_to('View All Instructor Courses',:controller => 'instructor_courses',:action =>'index')  %>
+<div id="wrapper">
+  <div id="sidebar-wrapper" class="col-md-2">
+    <div class = "side_bar">
+      <div class="list-group">
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('Edit Profile',@user, :controller => 'users',:action =>'edit')  %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Users',:controller => 'users',:action =>'new' ) %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Users',:controller => 'admin',:action =>'show', :viewusers =>true) %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Courses',:controller => 'courses',:action =>'new' ) %> </button>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Courses',:controller => 'admin',:action =>'show', :viewcourses =>true ) %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('Enrollment',:controller => 'student_courses',:action =>'new')  %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('View All Student Courses Requests',:controller => 'student_courses',:action =>'index')  %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Enrollment Requests', :controller => 'admin',:action =>'show', :viewenrollment => true)  %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Instructor Courses',:controller => 'instructor_courses',:action =>'new')  %></button>
+        <button type="button" class="btn btn-default navbar-btn"><%=link_to('View All Instructor Courses',:controller => 'instructor_courses',:action =>'index')  %></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class = "col-md-4"><h1>Admin Home Page</h1></div>
+
+
+
+
+
+
+
+

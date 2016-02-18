@@ -1,11 +1,21 @@
+<div id="wrapper">
+  <div id="sidebar-wrapper" class="col-md-2">
+    <div class = "side_bar">
+      <div class="list-group">
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admin' , :action => 'index')%></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
 <% if params[:viewusers] %>
-    <hi>Display All Users</hi>
+    <h1>Display All Users</h1>
     <table>
       <thead>
       <tr>
-        <th>  E-mail  </th>
-        <th>  Name  </th>
-        <th>  Is Admin??  </th>
+        <th>  E-mail           </th>
+        <th>  Name             </th>
+        <th>  Is Admin??       </th>
         <th>  Is Instructor??  </th>
       </tr>
       </thead>
@@ -17,25 +27,25 @@
           <td><%= user.name %><br></td>
           <td><%= user.is_admin %><br></td>
           <td><%= user.is_instructor %><br></td>
-          <td><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%></td>
-          <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%><br></td>
+          <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %><br></td>
         </tr>
     <% end %>
     </tbody>
     </table>
 
 <%elsif params[:viewcourses] %>
-    <hi>Display All Courses</hi>
+    <h1>Display All Courses</h1>
     <table>
       <thead>
       <tr>
-        <th>  Course No.  </th>
-        <th>  Title  </th>
-        <th>  Description  </th>
-        <th>  Materials  </th>
-        <th>  Is Active??  </th>
-        <th>  Start Date  </th>
-        <th>  End Date  </th>
+        <th>  Course No.    </th>
+        <th>  Title         </th>
+        <th>  Description   </th>
+        <th>  Materials     </th>
+        <th>  Is Active??   </th>
+        <th>  Start Date    </th>
+        <th>  End Date      </th>
       </tr>
       </thead>
 
@@ -49,24 +59,24 @@
             <td><%= course.is_active %><br></td>
             <td><%= course.start_date %><br></td>
             <td><%= course.end_date %><br></td>
-            <td><%= link_to 'Edit',course, :controller => 'courses', :action => 'edit'%></td>
-            <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit',course, :controller => 'courses', :action => 'edit'%><br></td>
+            <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %><br></td>
           </tr>
       <% end %>
       </tbody>
     </table>
 
 <%elsif params[:viewenrollment] %>
-    <hi>Display All Student Course Enrollments</hi>
+    <h1>Display All Student Course Enrollments</h1>
     <table>
       <thead>
       <tr>
-        <th>Course ID</th>
-        <th>Student Email</th>
-        <th>Grade</th>
-        <th>Is Enrolled</th>
-        <th>Has Requested Enrollment</th>
-        <th>Enrollment Denied</th>
+        <th>  Course ID               </th>
+        <th>  Student Email           </th>
+        <th>  Grade                   </th>
+        <th>  Is Enrolled             </th>
+        <th>  Has Requested Enrollment</th>
+        <th>  Enrollment Denied       </th>
       </tr>
       </thead>
       <!% @user = User.find(session[:id]) %>
@@ -81,9 +91,9 @@
                 <td><%= student_course.is_curr_enrolled %><br></td>
                 <td><%= student_course.has_requested %><br></td>
                 <td><%= student_course.is_denied %><br></td>
-                <td><%= link_to 'Edit', student_course, action: 'edit'%></td>
-                <td><%= link_to 'History', controller: 'student_courses', action:  'index' , :viewspecific => true , :email => student_course.email %></td>
-                <td><%= link_to 'Destroy', student_course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to 'Edit', student_course, action: 'edit'%><br></td>
+                <td><%= link_to 'History', controller: 'student_courses', action:  'index' , :viewspecific => true , :email => student_course.email %><br></td>
+                <td><%= link_to 'Destroy', student_course, method: :delete, data: { confirm: 'Are you sure?' } %><br></td>
 
               </tr>
           <%end %>
@@ -92,4 +102,5 @@
     </table>
 
 <%end %>
-<%= link_to('Back', :controller => 'admin' , :action => 'index')%>
+
+</div>

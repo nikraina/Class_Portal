@@ -22,8 +22,7 @@
 </table>
 <%= link_to('Edit', :controller => 'users' , :action => 'edit')%>
 <% if @user1.is_admin %>
-    <%= link_to('Back to Display All users', :controller => 'admin' , :action => 'show')%>
-    <%= link_to('Homepage', :controller => 'admin' , :action => 'index')%>
+    <%= link_to('Back to Display All users', :controller => 'admin' , :action => 'show', :viewusers =>true)%>
 <% elsif @user1.is_instructor%>
     <%= link_to('Back', :controller => 'instructor' , :action => 'index')%>
 <%else %>

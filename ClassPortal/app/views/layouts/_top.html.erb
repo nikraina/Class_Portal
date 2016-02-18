@@ -1,0 +1,27 @@
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+      <div><h1>ClassPortal</h1></div>
+      <% if session[:id] %>
+          <% @user = User.find(session[:id])%>
+              <ul class="nav navbar-nav navbar-right">
+                <% if @user.is_admin %>
+                    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'admin', :action => 'index' ) %></button>
+                <% elsif @user.is_instructor %>
+                    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'instructor', :action => 'index' ) %></button>
+                <%	else  %>
+                    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'student', :action => 'index' ) %></button>
+                <%	 end %>
+
+                <button type="button" class="btn btn-default navbar-btn"><%= link_to('logout',:controller => 'home', :action => 'login' ) %></button>
+                </ul>
+      <%	 else %>
+        <ul class="nav navbar-nav navbar-right">
+                <button type="button" class="btn btn-default navbar-btn"><%= link_to('Login',:controller => 'home', :action => 'login' ) %></button>
+                <button type="button" class="btn btn-default navbar-btn">Sinup</button>
+          </ul>
+  <%	 end %>
+
+  </div>
+</nav>
