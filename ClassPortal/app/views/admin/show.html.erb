@@ -1,16 +1,8 @@
-<div id="wrapper">
-  <div id="sidebar-wrapper" class="col-md-2">
-    <div class = "side_bar">
-      <div class="list-group">
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admin' , :action => 'index')%></button>
-      </div>
-    </div>
-  </div>
-</div>
-<div>
+
+<div class ="container"><center>
 <% if params[:viewusers] %>
     <h1>Display All Users</h1>
-    <table>
+      <table class="table table-striped">
       <thead>
       <tr>
         <th>  E-mail           </th>
@@ -27,16 +19,16 @@
           <td><%= user.name %><br></td>
           <td><%= user.is_admin %><br></td>
           <td><%= user.is_instructor %><br></td>
-          <td><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%><br></td>
-          <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %><br></td>
+          <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%></button<br></td>
+          <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></button><br></td>
         </tr>
     <% end %>
     </tbody>
     </table>
 
 <%elsif params[:viewcourses] %>
-    <h1>Display All Courses</h1>
-    <table>
+      <center><h1>Display All Courses</h1></center>
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>  Course No.    </th>
@@ -59,16 +51,16 @@
             <td><%= course.is_active %><br></td>
             <td><%= course.start_date %><br></td>
             <td><%= course.end_date %><br></td>
-            <td><%= link_to 'Edit',course, :controller => 'courses', :action => 'edit'%><br></td>
-            <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %><br></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit',course, :controller => 'courses', :action => 'edit'%></button><br></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></button><br></td>
           </tr>
       <% end %>
       </tbody>
     </table>
 
 <%elsif params[:viewenrollment] %>
-    <h1>Display All Student Course Enrollments</h1>
-    <table>
+      <center><h1>Display All Student Course Enrollment Requests</h1></center>
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>  Course ID               </th>
@@ -91,9 +83,9 @@
                 <td><%= student_course.is_curr_enrolled %><br></td>
                 <td><%= student_course.has_requested %><br></td>
                 <td><%= student_course.is_denied %><br></td>
-                <td><%= link_to 'Edit', student_course, action: 'edit'%><br></td>
-                <td><%= link_to 'History', controller: 'student_courses', action:  'index' , :viewspecific => true , :email => student_course.email %><br></td>
-                <td><%= link_to 'Destroy', student_course, method: :delete, data: { confirm: 'Are you sure?' } %><br></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', student_course, action: 'edit'%><br></button></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'History', controller: 'student_courses', action:  'index' , :viewspecific => true , :email => student_course.email %><br></button></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Destroy', student_course, method: :delete, data: { confirm: 'Are you sure?' } %><br></button></td>
 
               </tr>
           <%end %>
@@ -102,5 +94,10 @@
     </table>
 
 <%end %>
-
+</center>
 </div>
+<nav class="navbar navbar-default">
+  <div class="btn-group-vertical" role="group" aria-label="...">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admin' , :action => 'index')%></button>
+  </div>
+</nav>

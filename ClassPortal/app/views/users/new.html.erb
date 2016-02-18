@@ -1,3 +1,6 @@
+
+  <center>
+<div>
 <h1>New user</h1>
 
 <%= form_for(:user,:url =>{:action => 'create'}) do |f| %>
@@ -25,4 +28,10 @@
       <%= f.submit %>
     </div>
 <% end %>
-<%= link_to('Back', :controller => 'admin' , :action => 'index')%>
+</div>
+  </center>
+  <nav class="navbar navbar-default">
+    <div class="btn-group-vertical" role="group" aria-label="...">
+      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admin' , :action => 'index')%></button>
+    </div>
+  </nav>

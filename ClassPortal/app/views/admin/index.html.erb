@@ -3,6 +3,7 @@
   <div id="sidebar-wrapper" class="col-md-2">
     <div class = "side_bar">
       <div class="list-group">
+        <div class="btn-group-vertical" role="group" aria-label="...">
         <button type="button" class="btn btn-default navbar-btn"><%=link_to('Edit Profile',@user, :controller => 'users',:action =>'edit')  %></button>
         <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Users',:controller => 'users',:action =>'new' ) %></button>
         <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Users',:controller => 'admin',:action =>'show', :viewusers =>true) %></button>
@@ -14,10 +15,12 @@
         <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Instructor Courses',:controller => 'instructor_courses',:action =>'new')  %></button>
         <button type="button" class="btn btn-default navbar-btn"><%=link_to('View All Instructor Courses',:controller => 'instructor_courses',:action =>'index')  %></button>
       </div>
+        </div>
     </div>
   </div>
 </div>
-<div class = "col-md-4"><h1>Admin Home Page</h1></div>
+
+<center><h1>Admin Home Page</h1></center>
 
 
 
