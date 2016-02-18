@@ -1,6 +1,8 @@
-<h1>Listing courses</h1>
+<div class="container">
+  <center>
+    <h1>All Courses</h1>
 <% if !params[:instructor] and !params[:enrollment]%>
-    <table>
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>Course ID</th>
@@ -15,16 +17,16 @@
             <td><%= course.course_id %><br></td>
             <td><%= course.title %><br></td>
             <td><%= course.is_active %><br></td>
-            <td><%= link_to 'Show', course %></td>
-            <td><%= link_to 'Edit', edit_course_path(course) %></td>
-            <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show', course %></td></button>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', edit_course_path(course) %></td></button>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td></button>
           </tr>
       <% end %>
       </tbody>
     </table>
 <% elsif params[:instructor] and !params[:enrollment] %>
     <%@instructor_courses = InstructorCourse.find_all_by_email(params[:instructor]) %>
-    <table>
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>Course ID</th>
@@ -38,7 +40,7 @@
             <% @course = Course.find_by_course_id(instructor_course.course_id) %>
             <td><%= instructor_course.course_id %><br></td>
             <td><%= @course.is_active %><br></td>
-            <td><%= link_to 'Edit', @course , action:  'edit'  %></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', @course , action:  'edit'  %></td></button>
             <td><!%= link_to 'Show', course %></td>
             <td><!%= link_to 'Edit', edit_course_path(course) %></td>
             <td><!%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -48,7 +50,7 @@
     </table>
 <% elsif params[:instructor] and params[:enrollment] %>
     <%@instructor_courses = InstructorCourse.find_all_by_email(params[:instructor]) %>
-    <table>
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>Course ID</th>
@@ -64,7 +66,7 @@
             <td><%= instructor_course.course_id %><br></td>
             <td><%= @course.is_active %><br></td>
             <!%if @course.is_active %>
-                <td><%= link_to 'Edit Enrollments', controller: 'student_courses', action:  'index' , :course => instructor_course.course_id %></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit Enrollments', controller: 'student_courses', action:  'index' , :course => instructor_course.course_id %></td></button>
             <!% end%>
             <td><!%= link_to 'Show', course %></td>
             <td><!%= link_to 'Edit', edit_course_path(course) %></td>
@@ -74,7 +76,5 @@
       </tbody>
     </table>
 <% end %>
-
-<br>
-
-<%= link_to 'New Course', new_course_path %>
+  </center>
+</div>

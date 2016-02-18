@@ -1,5 +1,7 @@
-<h1>User profile </h1>
-<table>
+<div class = "container">
+  <center>
+    <h1>User Profile </h1>
+<table class="table table-striped">
   <thead>
   <tr>
     <th>  E-mail  </th>
@@ -20,11 +22,16 @@
   </tr>
   </tbody>
 </table>
-<%= link_to('Edit', :controller => 'users' , :action => 'edit')%>
-<% if @user1.is_admin %>
-    <%= link_to('Back to Display All users', :controller => 'admin' , :action => 'show', :viewusers =>true)%>
-<% elsif @user1.is_instructor%>
-    <%= link_to('Back', :controller => 'instructor' , :action => 'index')%>
-<%else %>
-    <%= link_to('Back', :controller => 'student' , :action => 'index')%>
-<%end%>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Edit', :controller => 'users' , :action => 'edit')%></button>
+      <% if @user1.is_admin %>
+      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admin' , :action => 'index')%></button>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('View All users', :controller => 'admin' , :action => 'show', :viewusers =>true)%></button>
+      <% elsif @user1.is_instructor%>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructor' , :action => 'index')%></button>
+      <%else %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'student' , :action => 'index')%></button>
+      <%end%>
+</nav>

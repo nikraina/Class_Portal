@@ -1,4 +1,6 @@
-<h1>Editing course</h1>
+<div>
+  <center>
+<h1>Edit Course Details</h1>
 
 
 <% @course = Course.find(params[:id])%>
@@ -29,7 +31,7 @@
     </div>
     <div class="field">
       <%= f.label :is_active %><br>
-      <%= f.text_field :is_active %>
+      <%= f.check_box :is_active %>
     </div>
     <div class="field">
       <%= f.label :materials %><br>
@@ -39,12 +41,10 @@
       <%= f.submit %>
     </div>
 <% end %>
-
-<!% if @user.is_admin %>
-<%= link_to('Back', :controller => 'courses' , :action => 'show')%>
-<!% elsif @user_1.is_instructor%>
-<!%= link_to('Back', :controller => 'instructor' , :action => 'index')%>
-<!%else %>
-<!%= link_to('Back', :controller => 'student' , :action => 'index')%>
-<!%end%>
-
+  </center>
+</div>
+<div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'courses' , :action => 'show')%></button>
+</nav>
+</div>

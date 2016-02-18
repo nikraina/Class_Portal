@@ -12,7 +12,6 @@ class HomeController < ApplicationController
         if (user.password == params[:password])    #(user=User.where(:password => params[:password]).first)
           session[:id]=user.id
           session[:email]=user.email
-          flash[:notice] = "Successfully Logged in"
           session[:is_admin] = user.is_admin
           session[:is_instructor] = user.is_instructor
           if session[:is_admin]

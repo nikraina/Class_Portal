@@ -1,7 +1,7 @@
 
 <div class ="container"><center>
 <% if params[:viewusers] %>
-    <h1>Display All Users</h1>
+    <h1> All Users</h1>
       <table class="table table-striped">
       <thead>
       <tr>
@@ -19,7 +19,7 @@
           <td><%= user.name %><br></td>
           <td><%= user.is_admin %><br></td>
           <td><%= user.is_instructor %><br></td>
-          <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%></button<br></td>
+          <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit',user, :controller => 'users', :action => 'edit'%></button><br></td>
           <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></button><br></td>
         </tr>
     <% end %>
@@ -27,7 +27,7 @@
     </table>
 
 <%elsif params[:viewcourses] %>
-      <center><h1>Display All Courses</h1></center>
+      <center><h1> All Courses</h1></center>
     <table class="table table-striped">
       <thead>
       <tr>
@@ -59,7 +59,7 @@
     </table>
 
 <%elsif params[:viewenrollment] %>
-      <center><h1>Display All Student Course Enrollment Requests</h1></center>
+      <center><h1>All Course Enrollment Requests by Students</h1></center>
     <table class="table table-striped">
       <thead>
       <tr>
@@ -97,7 +97,5 @@
 </center>
 </div>
 <nav class="navbar navbar-default">
-  <div class="btn-group-vertical" role="group" aria-label="...">
     <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admin' , :action => 'index')%></button>
-  </div>
 </nav>

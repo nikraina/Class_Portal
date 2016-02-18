@@ -1,5 +1,7 @@
-<h1>Course  </h1>
-<table>
+<div class="container">
+  <center>
+    <h1>Course Details  </h1>
+<table class="table table-striped">
   <thead>
   <tr>
     <th>  Course No.  </th>
@@ -26,11 +28,15 @@
   </tr>
   </tbody>
 </table>
-
-<%= link_to('Edit', :controller => 'courses' , :action => 'edit')%>
-<% if @user1.is_admin %>
-    <%= link_to('Back to Display All Courses', :controller => 'admin' , :action => 'show')%>
-    <%= link_to('Homepage', :controller => 'admin' , :action => 'index')%>
-<% elsif @user1.is_instructor%>
-    <%= link_to('Back', :controller => 'instructor' , :action => 'index')%>
-<%end%>
+  </center>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Edit', :controller => 'courses' , :action => 'edit')%></button>
+    <% if @user1.is_admin %>
+      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to Display All Courses', :controller => 'admin' , :action => 'show', :viewcourses =>true)%></button>
+    <% elsif @user1.is_instructor%>
+      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructor' , :action => 'index')%></button>
+    <%end%>
+  </nav>
+</div>

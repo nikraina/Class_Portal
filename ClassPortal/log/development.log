@@ -32723,3 +32723,3923 @@ Processing by AdminController#index as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
   Rendered layouts/_top.html.erb (1.0ms)
 Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:06:53 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewenrollment=true" for 127.0.0.1 at 2016-02-18 03:07:04 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewenrollment"=>"true", "id"=>"show"}
+  [1m[36mStudentCourse Load (0.2ms)[0m  [1mSELECT "student_courses".* FROM "student_courses"[0m
+  Rendered admin/show.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:07:12 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses" for 127.0.0.1 at 2016-02-18 03:07:13 -0500
+Processing by StudentCoursesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mStudentCourse Load (0.1ms)[0m  [1mSELECT "student_courses".* FROM "student_courses"[0m
+  Rendered student_courses/index.html.erb within layouts/application (3.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:07:15 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewenrollment=true" for 127.0.0.1 at 2016-02-18 03:07:19 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewenrollment"=>"true", "id"=>"show"}
+  [1m[35mStudentCourse Load (0.4ms)[0m  SELECT "student_courses".* FROM "student_courses"
+  Rendered admin/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:09:43 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:09:45 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:10:07 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-18 03:10:09 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:10:10 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:10:28 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:12:53 -0500
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:04 -0500
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:16:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:16:48 -0500
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:17:02 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (5.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:17:04 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:17:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.3ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:17:15 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:17:19 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:18:10 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:18:13 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:18:14 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:18:15 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:18:17 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (3.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:18:25 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:19:10 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:19:12 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (3.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:19:16 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:19:20 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:19:23 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:19:24 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:19:27 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2016-02-18 03:19:29 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6/edit" for 127.0.0.1 at 2016-02-18 03:19:31 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (3.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/show.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:20:53 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:20:55 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:20:58 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-02-18 03:21:00 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2016-02-18 03:21:01 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (6.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-02-18 03:21:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2016-02-18 03:21:22 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (3.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:21:24 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 03:21:30 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_top.html.erb (0.2ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0yhOnI3Tu0us0FEjv7E6Zy9a6sYinwu2N6eZFszHwqE=", "email"=>"stu@class.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'stu@class.com' ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/student
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+Processing by StudentController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered student/index.html.erb within layouts/application (1.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:21:37 -0500
+
+
+Started GET "/users/6" for 127.0.0.1 at 2016-02-18 03:21:42 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6/edit" for 127.0.0.1 at 2016-02-18 03:21:44 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered users/edit.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2016-02-18 03:21:46 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/student" for 127.0.0.1 at 2016-02-18 03:21:48 -0500
+Processing by StudentController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered student/index.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 03:21:54 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_top.html.erb (0.2ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0yhOnI3Tu0us0FEjv7E6Zy9a6sYinwu2N6eZFszHwqE=", "email"=>"admin@class.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@class.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:01 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:22:04 -0500
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:24:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (8.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:09 -0500
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:24:10 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (6.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (4.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:24:42 -0500
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:25:22 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:25:26 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:25:29 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.6ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:25:31 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:25:38 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:25:40 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:25:41 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:25:44 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:25:46 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:25:47 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:25:49 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:26:04 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:26:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:26:17 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:27:19 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:27:21 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:28:44 -0500
+
+
+Started GET "/admin?viewusers=true" for 127.0.0.1 at 2016-02-18 03:28:47 -0500
+Processing by AdminController#index as HTML
+  Parameters: {"viewusers"=>"true"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:28:49 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2016-02-18 03:28:50 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.3ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin?viewusers=true" for 127.0.0.1 at 2016-02-18 03:28:53 -0500
+Processing by AdminController#index as HTML
+  Parameters: {"viewusers"=>"true"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:28:55 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:28:57 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin?viewusers=true" for 127.0.0.1 at 2016-02-18 03:29:00 -0500
+Processing by AdminController#index as HTML
+  Parameters: {"viewusers"=>"true"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:29:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:30:16 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (4.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:30:17 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin?viewusers=true" for 127.0.0.1 at 2016-02-18 03:30:28 -0500
+Processing by AdminController#index as HTML
+  Parameters: {"viewusers"=>"true"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (3.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:30:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.5ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:30:40 -0500
+
+
+Started GET "/admin?viewusers=true" for 127.0.0.1 at 2016-02-18 03:30:41 -0500
+Processing by AdminController#index as HTML
+  Parameters: {"viewusers"=>"true"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:30:43 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin?viewusers=true" for 127.0.0.1 at 2016-02-18 03:32:22 -0500
+Processing by AdminController#index as HTML
+  Parameters: {"viewusers"=>"true"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:32:23 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:32:26 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:32:28 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/show.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-02-18 03:32:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2016-02-18 03:32:32 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-02-18 03:32:33 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:32:35 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:32:41 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0yhOnI3Tu0us0FEjv7E6Zy9a6sYinwu2N6eZFszHwqE=", "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Redirected to http://localhost:3000/admin/1?viewusers=true
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/1?viewusers=true" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:32:45 -0500
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:32:52 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.6ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:33:21 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:33:23 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (4.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:33:24 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:33:25 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2016-02-18 03:33:29 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:33:31 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:33:33 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:33:37 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:33:39 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:33:41 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:33:46 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (18.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.3ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:33:48 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:33:52 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (6.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:33:54 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:35:33 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.4ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:35:36 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (3.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/2" for 127.0.0.1 at 2016-02-18 03:35:38 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered admin/show.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:35:41 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:36:02 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:36:08 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2" for 127.0.0.1 at 2016-02-18 03:36:10 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered admin/show.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:36:13 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:36:57 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (7.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:36:59 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:37:04 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:37:06 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses" for 127.0.0.1 at 2016-02-18 03:37:10 -0500
+Processing by StudentCoursesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mStudentCourse Load (0.1ms)[0m  SELECT "student_courses".* FROM "student_courses"
+  Rendered student_courses/index.html.erb within layouts/application (32.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:37:11 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/instructor_courses" for 127.0.0.1 at 2016-02-18 03:37:14 -0500
+Processing by InstructorCoursesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mInstructorCourse Load (0.1ms)[0m  SELECT "instructor_courses".* FROM "instructor_courses"
+  Rendered instructor_courses/index.html.erb within layouts/application (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:37:15 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/indeex" for 127.0.0.1 at 2016-02-18 03:38:00 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"indeex"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "indeex"]]
+  Rendered courses/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Course with id=indeex):
+  app/views/courses/show.html.erb:16:in `_app_views_courses_show_html_erb__2759482596930818331_70263403526780'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/courses/index" for 127.0.0.1 at 2016-02-18 03:38:06 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "index"]]
+  Rendered courses/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Course with id=index):
+  app/views/courses/show.html.erb:16:in `_app_views_courses_show_html_erb__2759482596930818331_70263403526780'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:38:30 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:38:39 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:38:43 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (29.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.5ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:38:47 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:38:49 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:38:50 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2" for 127.0.0.1 at 2016-02-18 03:38:53 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered admin/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:38:54 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:41:22 -0500
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:41:28 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:41:31 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:41:34 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:41:39 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (7.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:41:45 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:49 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:50 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:50 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:45:50 -0500
+
+
+Started GET "/admin/show?viewusers=true" for 127.0.0.1 at 2016-02-18 03:45:51 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"show"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered admin/show.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2016-02-18 03:45:54 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/5?viewusers=true" for 127.0.0.1 at 2016-02-18 03:45:55 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/show.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:45:57 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:45:58 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:46:00 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:46:02 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2016-02-18 03:46:03 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/edit.html.erb within layouts/application (3.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:46:05 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/4?viewusers=true" for 127.0.0.1 at 2016-02-18 03:46:06 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewusers"=>"true", "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered admin/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:46:07 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:46:13 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:46:17 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2" for 127.0.0.1 at 2016-02-18 03:46:20 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered admin/show.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:46:21 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2016-02-18 03:46:23 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:46:27 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:46:43 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:46:45 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/2/edit" for 127.0.0.1 at 2016-02-18 03:46:53 -0500
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/edit.html.erb within layouts/application (8.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:46:56 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2" for 127.0.0.1 at 2016-02-18 03:46:59 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered admin/show.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:47:00 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:47:02 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:47:03 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:52:25 -0500
+
+
+Started GET "/admin/2?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:52:28 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:52:29 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:52:31 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:52:34 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (4.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/2?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:52:37 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:52:40 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.2ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2/edit" for 127.0.0.1 at 2016-02-18 03:52:42 -0500
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/edit.html.erb within layouts/application (6.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:52:44 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:52:47 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"2"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:52:48 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:52:52 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:52:53 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:52:58 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"2"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:53:00 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:58:26 -0500
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:58:29 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.5ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:58:31 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2/edit" for 127.0.0.1 at 2016-02-18 03:58:33 -0500
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/edit.html.erb within layouts/application (7.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 03:58:35 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2?viewcourses=true" for 127.0.0.1 at 2016-02-18 03:58:36 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"2"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:58:40 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:58:45 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:58:49 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses/new" for 127.0.0.1 at 2016-02-18 03:58:51 -0500
+Processing by StudentCoursesController#new as HTML
+  Rendered student_courses/new.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.0ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:58:53 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses" for 127.0.0.1 at 2016-02-18 03:58:56 -0500
+Processing by StudentCoursesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mStudentCourse Load (0.1ms)[0m  [1mSELECT "student_courses".* FROM "student_courses"[0m
+  Rendered student_courses/index.html.erb within layouts/application (3.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:58:58 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewenrollment=true" for 127.0.0.1 at 2016-02-18 03:58:59 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewenrollment"=>"true", "id"=>"show"}
+  [1m[35mStudentCourse Load (0.1ms)[0m  SELECT "student_courses".* FROM "student_courses"
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:59:01 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/instructor_courses/new" for 127.0.0.1 at 2016-02-18 03:59:03 -0500
+Processing by InstructorCoursesController#new as HTML
+  Rendered instructor_courses/new.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:59:05 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/instructor_courses" for 127.0.0.1 at 2016-02-18 03:59:06 -0500
+Processing by InstructorCoursesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mInstructorCourse Load (0.1ms)[0m  SELECT "instructor_courses".* FROM "instructor_courses"
+  Rendered instructor_courses/index.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:59:07 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 03:59:17 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_top.html.erb (0.3ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0yhOnI3Tu0us0FEjv7E6Zy9a6sYinwu2N6eZFszHwqE=", "email"=>"ins@class.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ins@class.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/instructor
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+Processing by InstructorController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered instructor/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.6ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 03:59:26 -0500
+
+
+Started GET "/courses?instructor=ins%40class.com" for 127.0.0.1 at 2016-02-18 03:59:32 -0500
+Processing by CoursesController#index as HTML
+  Parameters: {"instructor"=>"ins@class.com"}
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from _app_views_courses_index_html_erb___102077851649907954_70263398289960 at /Users/Manav/Desktop/Spring 16/CSC 517 ODD/Project 1/Class_Portal/ClassPortal/app/views/courses/index.html.erb:28)
+  [1m[35mInstructorCourse Load (0.2ms)[0m  SELECT "instructor_courses".* FROM "instructor_courses" WHERE "instructor_courses"."email" = 'ins@class.com'
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."course_id" = 'oodd' LIMIT 1[0m
+  Rendered courses/index.html.erb within layouts/application (24.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 03:59:39 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 03:59:41 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered admin/index.html.erb within layouts/application (2.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 03:59:48 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_top.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0yhOnI3Tu0us0FEjv7E6Zy9a6sYinwu2N6eZFszHwqE=", "email"=>"ins@class.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ins@class.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/instructor
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+Processing by InstructorController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered instructor/index.html.erb within layouts/application (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 04:02:01 -0500
+
+
+Started GET "/courses?enrollment=true&instructor=ins%40class.com" for 127.0.0.1 at 2016-02-18 04:02:04 -0500
+Processing by CoursesController#index as HTML
+  Parameters: {"enrollment"=>"true", "instructor"=>"ins@class.com"}
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from _app_views_courses_index_html_erb___102077851649907954_70263403721000 at /Users/Manav/Desktop/Spring 16/CSC 517 ODD/Project 1/Class_Portal/ClassPortal/app/views/courses/index.html.erb:52)
+  [1m[35mInstructorCourse Load (0.2ms)[0m  SELECT "instructor_courses".* FROM "instructor_courses" WHERE "instructor_courses"."email" = 'ins@class.com'
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."course_id" = 'oodd' LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from block in _app_views_courses_index_html_erb___102077851649907954_70263403721000 at /Users/Manav/Desktop/Spring 16/CSC 517 ODD/Project 1/Class_Portal/ClassPortal/app/views/courses/index.html.erb:65)
+  [1m[35mStudentCourse Load (0.2ms)[0m  SELECT "student_courses".* FROM "student_courses" WHERE "student_courses"."course_id" = 'oodd'
+  Rendered courses/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-18 04:02:12 -0500
+Processing by InstructorController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered instructor/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses?instructor=ins%40class.com" for 127.0.0.1 at 2016-02-18 04:03:14 -0500
+Processing by CoursesController#index as HTML
+  Parameters: {"instructor"=>"ins@class.com"}
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from _app_views_courses_index_html_erb___102077851649907954_70263403524560 at /Users/Manav/Desktop/Spring 16/CSC 517 ODD/Project 1/Class_Portal/ClassPortal/app/views/courses/index.html.erb:28)
+  [1m[35mInstructorCourse Load (0.2ms)[0m  SELECT "instructor_courses".* FROM "instructor_courses" WHERE "instructor_courses"."email" = 'ins@class.com'
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."course_id" = 'oodd' LIMIT 1[0m
+  Rendered courses/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (1.3ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-18 04:03:19 -0500
+Processing by InstructorController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered instructor/index.html.erb within layouts/application (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses?enrollment=true&instructor=ins%40class.com" for 127.0.0.1 at 2016-02-18 04:03:21 -0500
+Processing by CoursesController#index as HTML
+  Parameters: {"enrollment"=>"true", "instructor"=>"ins@class.com"}
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from _app_views_courses_index_html_erb___102077851649907954_70263403524560 at /Users/Manav/Desktop/Spring 16/CSC 517 ODD/Project 1/Class_Portal/ClassPortal/app/views/courses/index.html.erb:52)
+  [1m[36mInstructorCourse Load (0.1ms)[0m  [1mSELECT "instructor_courses".* FROM "instructor_courses" WHERE "instructor_courses"."email" = 'ins@class.com'[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses" WHERE "courses"."course_id" = 'oodd' LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.where(...).all instead. (called from block in _app_views_courses_index_html_erb___102077851649907954_70263403524560 at /Users/Manav/Desktop/Spring 16/CSC 517 ODD/Project 1/Class_Portal/ClassPortal/app/views/courses/index.html.erb:65)
+  [1m[36mStudentCourse Load (0.1ms)[0m  [1mSELECT "student_courses".* FROM "student_courses" WHERE "student_courses"."course_id" = 'oodd'[0m
+  Rendered courses/index.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/student_courses?course=oodd" for 127.0.0.1 at 2016-02-18 04:03:23 -0500
+Processing by StudentCoursesController#index as HTML
+  Parameters: {"course"=>"oodd"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mStudentCourse Load (0.1ms)[0m  SELECT "student_courses".* FROM "student_courses"
+  Rendered student_courses/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-18 04:03:27 -0500
+Processing by InstructorController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered instructor/index.html.erb within layouts/application (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2016-02-18 04:03:36 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5/edit" for 127.0.0.1 at 2016-02-18 04:03:43 -0500
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered users/edit.html.erb within layouts/application (3.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2016-02-18 04:03:46 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/instructor" for 127.0.0.1 at 2016-02-18 04:03:49 -0500
+Processing by InstructorController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered instructor/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 04:05:00 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_top.html.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 04:05:10 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_top.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/logintry" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+Processing by HomeController#logintry as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0yhOnI3Tu0us0FEjv7E6Zy9a6sYinwu2N6eZFszHwqE=", "email"=>"admin@class.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@class.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.6ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/instructor.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/instructor_courses.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/student_courses.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2016-02-18 04:05:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/instructor.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/instructor_courses.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/student_courses.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-02-18 04:05:18 -0500
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2016-02-18 04:05:21 -0500
+Processing by CoursesController#new as HTML
+  Rendered courses/new.html.erb within layouts/application (29.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:05:22 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewcourses=true" for 127.0.0.1 at 2016-02-18 04:05:24 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"show"}
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/2" for 127.0.0.1 at 2016-02-18 04:05:28 -0500
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCourse Load (0.1ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered courses/show.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/2?viewcourses=true" for 127.0.0.1 at 2016-02-18 04:05:29 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewcourses"=>"true", "id"=>"2"}
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  Rendered admin/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:05:34 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses/new" for 127.0.0.1 at 2016-02-18 04:05:38 -0500
+Processing by StudentCoursesController#new as HTML
+  Rendered student_courses/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:05:46 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses" for 127.0.0.1 at 2016-02-18 04:05:48 -0500
+Processing by StudentCoursesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mStudentCourse Load (0.1ms)[0m  SELECT "student_courses".* FROM "student_courses"
+  Rendered student_courses/index.html.erb within layouts/application (3.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:05:51 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses" for 127.0.0.1 at 2016-02-18 04:05:53 -0500
+Processing by StudentCoursesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mStudentCourse Load (0.1ms)[0m  SELECT "student_courses".* FROM "student_courses"
+  Rendered student_courses/index.html.erb within layouts/application (3.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:05:58 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin/show?viewenrollment=true" for 127.0.0.1 at 2016-02-18 04:06:01 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewenrollment"=>"true", "id"=>"show"}
+  [1m[36mStudentCourse Load (0.2ms)[0m  [1mSELECT "student_courses".* FROM "student_courses"[0m
+  Rendered admin/show.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:06:03 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewenrollment=true" for 127.0.0.1 at 2016-02-18 04:06:07 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewenrollment"=>"true", "id"=>"show"}
+  [1m[35mStudentCourse Load (0.1ms)[0m  SELECT "student_courses".* FROM "student_courses"
+  Rendered admin/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:06:10 -0500
+Processing by AdminController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/show?viewenrollment=true" for 127.0.0.1 at 2016-02-18 04:06:12 -0500
+Processing by AdminController#show as HTML
+  Parameters: {"viewenrollment"=>"true", "id"=>"show"}
+  [1m[36mStudentCourse Load (0.2ms)[0m  [1mSELECT "student_courses".* FROM "student_courses"[0m
+  Rendered admin/show.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:06:16 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses" for 127.0.0.1 at 2016-02-18 04:06:20 -0500
+Processing by StudentCoursesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mStudentCourse Load (0.1ms)[0m  [1mSELECT "student_courses".* FROM "student_courses"[0m
+  Rendered student_courses/index.html.erb within layouts/application (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:06:26 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/instructor_courses/new" for 127.0.0.1 at 2016-02-18 04:06:33 -0500
+Processing by InstructorCoursesController#new as HTML
+  Rendered instructor_courses/new.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:06:36 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses/new" for 127.0.0.1 at 2016-02-18 04:06:39 -0500
+Processing by StudentCoursesController#new as HTML
+  Rendered student_courses/new.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:06:49 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses/new" for 127.0.0.1 at 2016-02-18 04:06:57 -0500
+Processing by StudentCoursesController#new as HTML
+  Rendered student_courses/new.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:06:59 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses/new" for 127.0.0.1 at 2016-02-18 04:07:11 -0500
+Processing by StudentCoursesController#new as HTML
+  Rendered student_courses/new.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:07:12 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/student_courses/new" for 127.0.0.1 at 2016-02-18 04:07:16 -0500
+Processing by StudentCoursesController#new as HTML
+  Rendered student_courses/new.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-02-18 04:07:18 -0500
+Processing by AdminController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered admin/index.html.erb within layouts/application (2.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_top.html.erb (0.7ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-18 04:08:15 -0500
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_top.html.erb (0.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
