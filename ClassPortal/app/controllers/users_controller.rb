@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in
-
+  before_action :logged_in, only: [:index, :show, :edit, :update, :destroy]
 
   def index
     @users = User.all
@@ -25,10 +24,18 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:notice]="User was successfully created."
-      redirect_to(:controller => 'admin', :action => 'show')
+      if @user.is_admin
+        redirect_to(:controller => 'admin', :action => 'show')
+      else
+        redirect_to(:controller => 'home', :action => 'login')
+      end
     else
       flash[:notice]="User couldnot be created !!"
-      redirect_to(:controller => 'users', :action => 'new')
+      if @user.is_admin
+        redirect_to(:controller => 'users', :action => 'new')
+      else
+        redirect_to(:controller => 'users', :action => 'new', :signup => true)
+      end
     end
   end
 

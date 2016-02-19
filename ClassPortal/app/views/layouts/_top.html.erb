@@ -19,7 +19,7 @@
       <%	 else %>
         <ul class="nav navbar-nav navbar-right">
                 <button type="button" class="btn btn-default navbar-btn"><%= link_to('Login',:controller => 'home', :action => 'login' ) %></button>
-                <button type="button" class="btn btn-default navbar-btn">Sinup</button>
+                <button type="button" class="btn btn-default navbar-btn"><%= link_to('Signup',:controller => 'users', :action => 'new', :signup => true ) %></button>
           </ul>
   <%	 end %>
 
