@@ -1,34 +1,55 @@
 <h1>Student Course Enrollment</h1>
-<%= form_for(:student_course,:url =>{:action => 'create'}) do |f| %>
-    <div class="field">
-      <%= f.label :course_id %><br>
-      <%= f.text_field :course_id %>
-    </div>
-    <div class="field">
-      <%= f.label :email %><br>
-      <%= f.text_field :email %>
-    </div>
-    <div class="field">
-      <%= f.label :grade %><br>
-      <%= f.text_field :grade %>
-    </div>
-    <div class="field">
-      <%= f.label :is_curr_enrolled %><br>
-      <%= f.check_box :is_curr_enrolled %>
-    </div>
 
-    <div class="field">
-      <%= f.label :has_requested %><br>
-      <%= f.check_box :has_requested %>
-    </div>
+    <%if !params[:student] %>
+        <%= form_for(:student_course,:url =>{:action => 'create'}) do |f| %>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id %>
+        </div>
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+        <div class="field">
+          <%= f.label :grade %><br>
+          <%= f.text_field :grade %>
+        </div>
+        <div class="field">
+          <%= f.label :is_curr_enrolled %><br>
+          <%= f.check_box :is_curr_enrolled %>
+        </div>
 
-    <div class="field">
-      <%= f.label :is_denied %><br>
-      <%= f.check_box :is_denied %>
-    </div>
+        <div class="field">
+          <%= f.label :has_requested %><br>
+          <%= f.check_box :has_requested %>
+        </div>
 
-    <div class="actions">
-      <%= f.submit %>
-    </div>
-<% end %>
+        <div class="field">
+          <%= f.label :is_denied %><br>
+          <%= f.check_box :is_denied %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+        <% end %>
+
+    <%else %>
+
+        <%= form_for(:student_course,:url =>{:action => 'create', :student => true}) do |f| %>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id %>
+        </div>
+
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+        
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+        <% end %>
+    <% end %>
 <%= link_to('Back', :controller => 'admin' , :action => 'index')%>

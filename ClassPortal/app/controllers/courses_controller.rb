@@ -26,6 +26,8 @@ class CoursesController < ApplicationController
     @course = Course.new(course_params)
     if @course.save
       flash[:notice]="Course was successfully created."
+      @instructor_course = InstructorCourse.create( course_id: course_params[:course_id], email: course_params[:email])
+      @instructor_course.save
       redirect_to(:controller => 'admin', :action => 'show')
     else
       flash[:notice]="Course couldnot be created !!"

@@ -54,10 +54,17 @@ class InstructorCoursesController < ApplicationController
   # DELETE /instructor_courses/1
   # DELETE /instructor_courses/1.json
   def destroy
-    @instructor_course.destroy
-    respond_to do |format|
-      format.html { redirect_to instructor_courses_url }
-      format.json { head :no_content }
+    @instructor_course = InstructorCourse.find(params[:id])
+    if(Course.exists?(:email => @instructor_course.email))
+      respond_to do |format|
+        format.html { redirect_to @instructor_course, notice: 'There is already a course assigned to this user' }
+      end
+    else
+      @instructor_course.destroy
+      respond_to do |format|
+        format.html { redirect_to instructor_courses_url }
+        format.json { head :no_content }
+      end
     end
   end
 

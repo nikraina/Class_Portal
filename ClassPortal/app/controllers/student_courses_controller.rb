@@ -31,7 +31,9 @@ class StudentCoursesController < ApplicationController
     #@course = Course.find_by(course_id: params[:course_id])
     #@user = User.where("email", params[:email])
     #if Course.find_by(course_id: params[:course_id])
-
+    if params[:student]
+      @student_course.has_requested = true
+    end
     #end
     #if params[:course_id] == @course.course_id and @student_course.email == @course.email
       if @student_course.save
