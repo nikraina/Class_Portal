@@ -2,4 +2,5 @@
 <% @user = User.find(session[:id])%>
 <%= link_to('logout',:controller => 'home', :action => 'login' ) %>
 <%=link_to('Edit Profile',@user, :controller => 'users',:action =>'edit')  %>
-<%=link_to('Request Enrollment', :controller => 'student_courses',:action =>'new', :email => @user.email, :student =>true)  %>
+<%=link_to('Show My Course History', :controller => 'student',:action =>'show')  %>
+<%=link_to('Request Enrollment', :controller => 'student_courses',:action =>'new', :email => @user.email, :student =>true)%>

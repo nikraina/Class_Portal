@@ -36,7 +36,7 @@
 
     <%else %>
 
-        <%= form_for(:student_course,:url =>{:action => 'create', :student => true}) do |f| %>
+        <%= form_for(:student_course,:url =>{:action => 'create', :student => true, :email => params[:email]}) do |f| %>
         <div class="field">
           <%= f.label :course_id %><br>
           <%= f.text_field :course_id %>

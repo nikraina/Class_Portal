@@ -33,15 +33,26 @@ class StudentCoursesController < ApplicationController
     #if Course.find_by(course_id: params[:course_id])
     if params[:student]
       @student_course.has_requested = true
+      @student_course.email = params[:email]
     end
     #end
     #if params[:course_id] == @course.course_id and @student_course.email == @course.email
       if @student_course.save
         flash[:notice]="Change this."
-        redirect_to(:controller => 'admin', :action => 'show')
+        if params[:student]
+          redirect_to(:controller => 'student', :action => 'index')
+        else
+          redirect_to(:controller => 'admin', :action => 'show')
+        end
+
       else
-        flash[:notice]="User couldnot be created !!"
-        redirect_to(:controller => 'student_courses', :action => 'new')
+        flash[:notice]="Student course enrollment couldnot be created !!"
+        if params[:student]
+          redirect_to(:controller => 'student_courses', :action => 'new', :student => true)
+        else
+          redirect_to(:controller => 'student_courses', :action => 'new')
+        end
+
       end
     #end
     #respond_to do |format|
@@ -73,6 +84,7 @@ class StudentCoursesController < ApplicationController
   # DELETE /student_courses/1
   # DELETE /student_courses/1.json
   def destroy
+    @student_course = StudentCourse.find(params[:id])
     @student_course.destroy
     respond_to do |format|
       format.html { redirect_to student_courses_url }
