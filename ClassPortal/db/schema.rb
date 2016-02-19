@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160217062555) do
+ActiveRecord::Schema.define(version: 20160219021532) do
 
   create_table "courses", force: true do |t|
     t.string   "course_id",   limit: 100, null: false
+    t.string   "email",       limit: 100
     t.string   "title",       limit: 100
     t.string   "description", limit: 100
     t.string   "materials"

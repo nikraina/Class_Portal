@@ -56,6 +56,7 @@ class StudentCoursesController < ApplicationController
   # PATCH/PUT /student_courses/1
   # PATCH/PUT /student_courses/1.json
   def update
+    @student_course= StudentCourse.find(params[:id])
     respond_to do |format|
       if @student_course.update(student_course_params)
         format.html { redirect_to @student_course, notice: 'Student course was successfully updated.' }

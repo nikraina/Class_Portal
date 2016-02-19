@@ -25,7 +25,6 @@ class InstructorCoursesController < ApplicationController
   # POST /instructor_courses.json
   def create
     @instructor_course = InstructorCourse.new(instructor_course_params)
-
     respond_to do |format|
       if @instructor_course.save
         format.html { redirect_to @instructor_course, notice: 'Instructor course was successfully created.' }
@@ -40,6 +39,7 @@ class InstructorCoursesController < ApplicationController
   # PATCH/PUT /instructor_courses/1
   # PATCH/PUT /instructor_courses/1.json
   def update
+    @instructor_course = InstructorCourse.find(params[:id])
     respond_to do |format|
       if @instructor_course.update(instructor_course_params)
         format.html { redirect_to @instructor_course, notice: 'Instructor course was successfully updated.' }

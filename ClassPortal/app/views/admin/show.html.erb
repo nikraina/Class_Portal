@@ -32,6 +32,7 @@
       <thead>
       <tr>
         <th>  Course No.    </th>
+        <th>  Instructor Email</th>
         <th>  Title         </th>
         <th>  Description   </th>
         <th>  Materials     </th>
@@ -45,6 +46,7 @@
       <% @courses.each do |course| %>
           <tr>
             <td><%= course.course_id %><br></td>
+            <td><%= course.email %><br></td>
             <td><%= course.title %><br></td>
             <td><%= course.description %><br></td>
             <td><%= course.materials %><br></td>

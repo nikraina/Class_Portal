@@ -6,6 +6,7 @@
       <thead>
       <tr>
         <th>Course ID</th>
+        <th>Instructor Email</th>
         <th>Title</th>
         <th>Is Active</th>
       </tr>
@@ -15,6 +16,7 @@
       <% @courses.each do |course| %>
           <tr>
             <td><%= course.course_id %><br></td>
+            <td><%= course.email %><br></td>
             <td><%= course.title %><br></td>
             <td><%= course.is_active %><br></td>
             <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show', course %></td></button>

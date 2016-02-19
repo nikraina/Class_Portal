@@ -5,6 +5,7 @@
   <thead>
   <tr>
     <th>  Course No.  </th>
+    <th>  Instructor Email </th>
     <th>  Title  </th>
     <th>  Description  </th>
     <th>  Materials  </th>
@@ -19,6 +20,7 @@
   <% @user1=User.find(session[:id]) %>
   <tr>
     <td><%= @course.course_id %><br></td>
+    <td><%= @course.email %><br></td>
     <td><%= @course.title %><br></td>
     <td><%= @course.description %><br></td>
     <td><%= @course.materials %><br></td>

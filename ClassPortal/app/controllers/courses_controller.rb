@@ -66,6 +66,6 @@ class CoursesController < ApplicationController
 
     def course_params
       params.fetch(:course, {})
-      params.require(:course).permit(:course_id, :title, :description, :start_date, :end_date, :is_active, :materials)
+      params.require(:course).permit(:course_id, :title, :email, :description, :start_date, :end_date, :is_active, :materials)
     end
 end
