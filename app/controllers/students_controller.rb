@@ -22,7 +22,7 @@ class StudentsController < UsersController
         set_true = false
       end
       @temp_courses.each do |course|
-        if(course.course_id == params[:course_id] or course.title == params[:title] or course.email == params[:email] or course.description == params[:description] or course.is_active = set_true)
+        if(course.course_id == params[:course_id] or course.title == params[:title] or course.email == params[:email] or course.description == params[:description] or course.is_active == set_true)
           @courses << course
         end
 
