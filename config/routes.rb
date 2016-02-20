@@ -34,6 +34,8 @@ Portal::Application.routes.draw do
   patch 'courses/:id/update' => 'courses#update'
   get 'courses/:id/destroy' => 'courses#destroy'
   post 'courses/:id/destroy' => 'courses#destroy'
+  #post 'courses/showsearchresults' => 'courses#showsearchresults'
+  #get 'courses/showsearchresults' => 'courses#showsearchresults'
 
 
   #users
@@ -68,6 +70,13 @@ Portal::Application.routes.draw do
   post 'students/home' => 'students#home'
   get 'students/viewcourses' => 'students#viewcourses'
   post 'students/viewcourses' => 'students#viewcourses'
+  post 'students/searchquery' => 'students#showsearchresults'
+  get 'students/searchquery' => 'students#searchquery'
+  get 'students/showsearchresults' => 'students#showsearchresults'
+  post 'students/showsearchresults' => 'students#showsearchresults'
+  get 'students/showsearchresults' => 'students#searchquery'
+  get 'students/enrollmentrequest' => 'students#enrollmentrequest'
+  post 'students/enrollmentrequest' => 'students#enrollmentrequest'
 
 
   #instructorCources

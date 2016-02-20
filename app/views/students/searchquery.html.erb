@@ -1,0 +1,26 @@
+<center>
+    <h1>Search Course</h1>
+    <%= form_tag(:method => 'showsearchresults', class: "navbar-form", id: "search-form") do  %>
+        <div class="input-append">
+          <ul>
+            <%= text_field_tag :course_id, params[:course_id], class: "span2", placeholder: "Course ID"  %>
+          </ul>
+          <ul>
+            <%= text_field_tag :title, params[:title], class: "span2", placeholder: "Course Title"  %>
+          </ul>
+          <ul>
+            <%= text_field_tag :email, params[:email], class: "span2", placeholder: "Instructor Email"  %>
+          </ul>
+          <ul>
+            <%= text_field_tag :description, params[:description], class: "span2", placeholder: "Description"  %>
+          </ul>
+          <ul>
+            <%= text_field_tag :is_active, params[:is_active], class: "span2", placeholder: "Is Active> true or false"  %>
+          </ul>
+          <button class="btn btn-default navbar-btn" type="submit" ><a>Search</a></button>
+          <%@courses = Course.all %>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Show All Courses', :controller => 'courses' , :action => 'index')%></button>
+
+        </div>
+    <% end %>
+</center>

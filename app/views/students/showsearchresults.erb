@@ -1,0 +1,45 @@
+<div class="container">
+  <center>
+    <h1>Search Results</h1>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Instructor Email</th>
+        <th>Title</th>
+        <th>  Description  </th>
+        <th>  Materials  </th>
+        <th>Is Active</th>
+        <th>  Start Date  </th>
+        <th>  End Date  </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @courses.each do |course| %>
+          <tr>
+            <td><%= course.course_id %><br></td>
+            <td><%= course.email %><br></td>
+            <td><%= course.title %><br></td>
+            <td><%= course.description %><br></td>
+            <td><%= course.materials %><br></td>
+            <td><%= course.is_active %><br></td>
+            <td><%= course.start_date %><br></td>
+            <td><%= course.end_date %><br></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to('Show', :controller => 'courses', :action => 'show', :id => course.id)  %></button></td>
+            <%if course.is_active %>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to('Enroll', :controller => 'students', :action => 'enrollmentrequest', :course_id => course.course_id)  %></button></td>
+            <%end%>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <div class="btn-group-vertical" role="group" aria-label="...">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+    <%@courses = Course.all %>
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Show All Courses', :controller => 'courses' , :action => 'index')%></button>
+  </div>
+</nav>
