@@ -66,6 +66,11 @@ class StudentCoursesController < ApplicationController
         redirect_to(:controller => 'students', :action => 'viewcourses')
       end
     elsif @student_course.update(student_course_params)
+      if @currentuser.is_instructor
+        if (@student_course.is_curr_enrolled and @student_course.has_requested) or (@student_course.is_denied and @student_course.has_requested)
+          @student_course.update_attributes(:has_requested => false)
+        end
+      end
       flash[:notice]="Updated successfully"
       if @currentuser.is_admin
         redirect_to(:controller => 'student_courses', :action => 'index')
