@@ -1,0 +1,22 @@
+<div>
+  <center>
+    <h1>Edit Instructors Assigned To Courses</h1>
+<% @instructor_course = InstructorCourse.find_by_id(params[:id]) %>
+<%= form_for @instructor_course, url: {:action=>'update' } do |f| %>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id %>
+        </div>
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+<% end %>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructor_courses' , :action => 'index')%></button>
+</nav>

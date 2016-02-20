@@ -1,0 +1,17 @@
+<% @user = User.find_by_id(session[:id])%>
+<div id="wrapper">
+  <div id="sidebar-wrapper" class="col-md-2">
+    <div class = "side_bar">
+      <div class="list-group">
+        <div class="btn-group-vertical" role="group" aria-label="...">
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Profile',id: @user.id, :controller => 'users',:action =>'show')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('Request Enrollment in Courses',:controller => 'student_courses',:action =>'new',:email => @user.email, :student =>true)  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My Active Courses',:controller => 'students',:action =>'viewcourses')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My History',:controller => 'student_courses',:action =>'studenthistory',id: @user.id )  %></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<center><h1>Student Home Page</h1></center>

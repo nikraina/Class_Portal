@@ -1,0 +1,28 @@
+<div class ="container">
+  <center>
+    <h1> All Instructors assigned to Courses</h1>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Course ID</th>
+    <th>Instructor Email</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @instructor_courses.each do |instructor_course| %>
+      <tr>
+        <% @user = User.find_by_email(instructor_course.email)%>
+            <td><%= instructor_course.course_id %><br></td>
+            <td><%= instructor_course.email %><br></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'instructor_courses', :action => 'edit', id: instructor_course.id %></button></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Remove',id: instructor_course.id, :action => 'destroy' %></button></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%=link_to('View History',:controller => 'instructor_courses',:action =>'insthistory',id: @user.id )  %></button></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+ </center>
+  </div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+</nav>

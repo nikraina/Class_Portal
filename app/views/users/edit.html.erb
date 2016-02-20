@@ -1,0 +1,57 @@
+<div><center>
+  <h1>Edit Information</h1>
+
+  <% @user = User.find_by_id(params[:id])%>
+  <% @currentuser = User.find_by_id(session[:id])%>
+  <%= form_for @user , url: {:controller => 'users', :action =>'update' ,id: @user.id } do |f| %>
+
+
+      <div class="field">
+        <%= f.label :email %><br>
+        <%= f.text_field :email %>
+      </div>
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <% if @user == @currentuser %>
+            <%= f.label :password %><br>
+            <%= f.password_field :password %>
+        <% end %>
+        <br>
+      </div>
+
+      <% if @currentuser.is_admin %>
+          <div class="field">
+            <%= f.label :is_admin %><br>
+            <%= f.check_box :is_admin %>
+          </div>
+
+          <div class="field">
+            <%= f.label :is_instructor %><br>
+            <%= f.check_box :is_instructor %>
+          </div>
+      <%end %>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+  <% end %>
+</center>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+    <% if @user == @currentuser %>
+        <%	 if @currentuser.is_admin %>
+            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Users', :controller => 'users' , :action => 'index')%></button>
+             <%	end  %>
+            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'users' , :action => 'show')%></button>
+    <% else %>
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Users', :controller => 'users' , :action => 'index')%></button>
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Instructors', :controller => 'admins' , :action => 'showinstructors')%></button>
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Students', :controller => 'admins' , :action => 'showstudents')%></button>
+
+  <%	 end %>
+  </nav>
+</div>
+

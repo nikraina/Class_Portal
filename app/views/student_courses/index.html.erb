@@ -1,0 +1,36 @@
+
+<div>
+  <center>
+    <h1>All Enrolled Students</h1>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Course ID</th>
+    <th>Student Email</th>
+    <th>Grade</th>
+    <th>Is Enrolled</th>
+    <th>Has Requested Enrollment</th>
+    <th>Enrollment Denied</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @student_courses.each do |student_course| %>
+      <tr>
+        <%	@user = User.find_by_email(student_course.email)  %>
+        <td><%= student_course.course_id %><br></td>
+        <td><%= student_course.email %><br></td>
+        <td><%= student_course.grade %><br></td>
+        <td><%= student_course.is_curr_enrolled %><br></td>
+        <td><%= student_course.has_requested %><br></td>
+        <td><%= student_course.is_denied %><br></td>
+        <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', id: student_course.id, action: 'edit'%></button></td>
+        <td> <button type="button" class="btn btn-default navbar-btn"><%=link_to('History',:controller => 'student_courses',:action =>'studenthistory',id: @user.id )  %></button></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+</nav>

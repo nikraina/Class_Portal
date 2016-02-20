@@ -1,0 +1,72 @@
+
+<div>
+  <center>
+
+
+<% @user = User.find(session[:id])%>
+<% @student_course = StudentCourse.find_by_id(params[:id]) %>
+<%= form_for @student_course, url: { :action =>'update' ,id: @student_course.id }  do |f| %>
+    <% if @user.is_admin %>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id %>
+        </div>
+
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+
+    <%else%>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id , :readonly => true%>
+        </div>
+
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email , :readonly => true%>
+        </div>
+
+    <% end %>
+
+    <div class="field">
+      <%= f.label :grade %><br>
+      <%= f.text_field :grade %>
+    </div>
+
+    <div class="field">
+      <%= f.label :is_curr_enrolled %><br>
+      <%= f.check_box :is_curr_enrolled %>
+    </div>
+        <% if @user.is_admin %>
+    <div class="field">
+      <%= f.label :has_requested %><br>
+      <%= f.check_box :has_requested %>
+    </div>
+        <%	end  %>
+    <div class="field">
+      <%= f.label :is_denied %><br>
+      <%= f.check_box :is_denied %>
+    </div>
+
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+  </center>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+<% if @user.is_admin %>
+        <%	 if params[:viewrequestsadmin] %>
+            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'studentrequests')%></button>
+        <% else%>
+            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'student_courses' , :action => 'index')%></button>
+        <%	 end %>
+<% else%>
+      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+<%end%>
+    </nav>
+</div>

@@ -1,0 +1,31 @@
+<div class ="container">
+  <center>
+    <h1> All Users</h1>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>  E-mail           </th>
+        <th>  Name             </th>
+        <th>  Is Admin??       </th>
+        <th>  Is Instructor??  </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @users.each do |user| %>
+          <tr>
+            <td><%= user.email %><br></td>
+            <td><%= user.name %><br></td>
+            <td><%= user.is_admin %><br></td>
+            <td><%= user.is_instructor %><br></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'users', :action => 'edit',id: user.id %></button><br></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: user.id, :action => 'destroy' %></button><br></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+</nav>

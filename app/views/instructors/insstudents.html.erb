@@ -1,0 +1,42 @@
+<%@inst = User.find_by_id(session[:id])	  %>
+<%@courses = InstructorCourse.find_all_by_email(@inst.email) %>
+<%@students = StudentCourse.all  %>
+<div>
+  <center>
+    <h1>All Students</h1>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Student Email</th>
+        <th>Grade</th>
+        <th>Is Enrolled</th>
+        <th>Has Requested Enrollment</th>
+        <th>Enrollment Denied</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @students.each do |student_course| %>
+          <% @courses.each do |course| %>
+          <%	@active = Course.find_by_course_id(course.course_id)  %>
+          <% if student_course.course_id == course.course_id and student_course.is_curr_enrolled and @active.is_active%>
+           <%	 @user = User.find_by_email(student_course.email) %>
+              <tr>
+                <td><%= student_course.course_id %><br></td>
+                <td><%= student_course.email %><br></td>
+                <td><%= student_course.grade %><br></td>
+                <td><%= student_course.is_curr_enrolled %><br></td>
+                <td><%= student_course.has_requested %><br></td>
+                <td><%= student_course.is_denied %><br></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Grades', id: student_course.id,:controller => 'student_courses', action: 'edit'%></button></td>
+                  </tr>
+          <%	 end %>
+          <%	 end %>
+      <% end %>
+      </tbody>
+    </table>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+</nav>

@@ -1,0 +1,67 @@
+
+<div>
+  <center>
+<%if !params[:student] %>
+    <h1>Enroll Students To Course</h1>
+    <%= form_for(:student_course,:url =>{:action => 'create'}) do |f| %>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id %>
+        </div>
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+        <div class="field">
+          <%= f.label :grade %><br>
+          <%= f.text_field :grade %>
+        </div>
+        <div class="field">
+          <%= f.label :is_curr_enrolled %><br>
+          <%= f.check_box :is_curr_enrolled %>
+        </div>
+
+        <div class="field">
+          <%= f.label :has_requested %><br>
+          <%= f.check_box :has_requested %>
+        </div>
+
+        <div class="field">
+          <%= f.label :is_denied %><br>
+          <%= f.check_box :is_denied %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+    <% end %>
+
+<%else %>
+    <h1>Request Enrollment To Course</h1>
+    <%= form_for(:student_course,:url =>{:action => 'create', :student => true ,:email => params[:email]}) do |f| %>
+        <div class="field">
+          <%= f.label :course_id %><br>
+          <%= f.text_field :course_id %>
+        </div>
+
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= h params[:email] %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+    <% end %>
+<% end %>
+</center>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+    <%if !params[:student] %>
+      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+    <%else %>
+      <button type="button" class="btn btn-default navbar-btn">  <%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+    <% end %>
+  </nav>
+</div>

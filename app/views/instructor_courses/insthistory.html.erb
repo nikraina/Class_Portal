@@ -1,0 +1,40 @@
+<%@inst = User.find_by_id(params[:id])	  %>
+<%@inst_courses = InstructorCourse.find_all_by_email(@inst.email) %>
+<div>
+  <center>
+    <h1>Instructor Course History </h1>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Instructor Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <%if !@inst_courses.nil? %>
+          <% @inst_courses.each do |inst_course| %>
+              <% @course = Course.find_by_course_id(inst_course.course_id) %>
+              <%	if !@course.is_active  %>
+              <tr>
+                <td><%= inst_course.course_id %><br></td>
+                <td><%= inst_course.email %><br></td>
+              </tr>
+              <%	 end %>
+          <% end %>
+      <%else %>
+          <% flash[:notice] = "This user has no course History" %>
+      <%end %>
+      </tbody>
+    </table>
+  </center>
+</div>
+<div>
+  <% @currentuser = User.find_by_id(session[:id])%>
+  <nav class="navbar navbar-default">
+    <%	 if @currentuser.is_admin %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+    <%	 else %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+    <%	 end %>
+  </nav>
+</div>

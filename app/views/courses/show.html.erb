@@ -1,0 +1,47 @@
+<div class="container">
+  <center>
+    <h1>Course Details  </h1>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>  Course No.  </th>
+        <th>  Instructor Email </th>
+        <th>  Title  </th>
+        <th>  Description  </th>
+        <th>  Materials  </th>
+        <th>  Is Active??  </th>
+        <th>  Start Date  </th>
+        <th>  End Date  </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @course=Course.find_by_id(params[:id]) %>
+      <% @user=User.find_by_id(session[:id]) %>
+      <tr>
+        <td><%= @course.course_id %><br></td>
+        <td><%= @course.email %><br></td>
+        <td><%= @course.title %><br></td>
+        <td><%= @course.description %><br></td>
+        <td><%= @course.materials %><br></td>
+        <td><%= @course.is_active %><br></td>
+        <td><%= @course.start_date %><br></td>
+        <td><%= @course.end_date %><br></td>
+      </tr>
+      </tbody>
+    </table>
+  </center>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+        <% if @user.is_admin %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to Display All Courses', :controller => 'courses' , :action => 'index')%></button>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Edit/Add Materials', :controller => 'courses' , :action => 'edit', id: @course.id )%></button>
+  <% elsif @user.is_instructor%>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to Courses', :controller => 'instructors' , :action => 'viewinscourses')%></button>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Edit/Add Materials', :controller => 'courses' , :action => 'edit', id: @course.id )%></button>
+  <%	else  %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+    <%end%>
+  </nav>
+</div>

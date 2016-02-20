@@ -1,0 +1,44 @@
+<%@inst = User.find_by_id(session[:id])	  %>
+<%@instructor_courses = InstructorCourse.find_all_by_email(@inst.email) %>
+<div>
+  <center>
+
+  <table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Course ID</th>
+    <th>  Title  </th>
+    <th>  Description  </th>
+    <th>  Materials  </th>
+    <th>  Is Active??  </th>
+    <th>  Start Date  </th>
+    <th>  End Date  </th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @instructor_courses.each do |instructor_course| %>
+      <% @course = Course.find_by_course_id(instructor_course.course_id) %>
+      <%	if @course.is_active  %>
+      <tr>
+        <td><%= instructor_course.course_id %><br></td>
+        <td><%= @course.title%><br></td>
+        <td><%= @course.description %><br></td>
+        <td><%= @course.materials %><br></td>
+        <td><%= @course.is_active %><br></td>
+        <td><%= @course.start_date %><br></td>
+        <td><%= @course.end_date %><br></td>
+        <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Materials', id: @course.id , :controller => 'courses', action:  'edit'  %></td></button>
+        <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'View All Students in Course', id: @course.id , :controller => 'student_courses', :action => 'studentcourses' %></button></td>
+        <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show Course Details', id: @course.id , :controller => 'courses', :action => 'show' %></button></td>
+      </tr>
+      <%	 end %>
+  <% end %>
+  </tbody>
+</table>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+  </nav>
+

@@ -1,0 +1,18 @@
+<% @user = User.find_by_id(session[:id])%>
+<div id="wrapper">
+  <div id="sidebar-wrapper" class="col-md-2">
+    <div class = "side_bar">
+      <div class="list-group">
+        <div class="btn-group-vertical" role="group" aria-label="...">
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Profile',id: @user.id, :controller => 'users',:action =>'show')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My Active Courses',:controller => 'instructors',:action =>'viewinscourses' ) %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('View All my students',:controller => 'instructors',:action =>'insstudents') %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Enrollment Requests', :controller => 'instructors',:action =>'studentsrequest')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My History',:controller => 'instructor_courses',:action =>'insthistory',id: @user.id )  %></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<center><h1>Instructor Home Page</h1></center>

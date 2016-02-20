@@ -1,0 +1,39 @@
+<%@course = Course.find_by_id(params[:id])	  %>
+<%@student_courses = StudentCourse.all  %>
+<div>
+  <center>
+    <h1>All Students Enrollred in this Course</h1>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Student Email</th>
+        <th>Grade</th>
+        <th>Is Enrolled</th>
+        <th>Has Requested Enrollment</th>
+        <th>Enrollment Denied</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @student_courses.each do |student_course| %>
+          <% if student_course.course_id == @course.course_id %>
+          <% if student_course.is_curr_enrolled %>
+          <tr>
+            <td><%= student_course.course_id %><br></td>
+            <td><%= student_course.email %><br></td>
+            <td><%= student_course.grade %><br></td>
+            <td><%= student_course.is_curr_enrolled %><br></td>
+            <td><%= student_course.has_requested %><br></td>
+            <td><%= student_course.is_denied %><br></td>
+            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', id: student_course.id, action: 'edit'%></button></td>
+              </tr>
+          <% end%>
+          <%	 end %>
+      <% end %>
+      </tbody>
+    </table>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'viewinscourses')%></button>
+</nav>

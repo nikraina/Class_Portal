@@ -1,0 +1,27 @@
+<% @user = User.find(session[:id])%>
+<div id="wrapper">
+  <div id="sidebar-wrapper" class="col-md-2">
+    <div class = "side_bar">
+      <div class="list-group">
+        <div class="btn-group-vertical" role="group" aria-label="...">
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Profile',id: @user.id, :controller => 'users',:action =>'show')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Users',:controller => 'users',:action =>'new' ) %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Users',:controller => 'users',:action =>'index') %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Instructors',:controller => 'admins',:action =>'showinstructors') %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Students',:controller => 'admins',:action =>'showstudents') %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Courses',:controller => 'courses',:action =>'new' ) %> </button>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Courses',:controller => 'courses',:action =>'index' ) %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('Enroll Students to Courses',:controller => 'student_courses',:action =>'new')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View All Enrolled Students ',:controller => 'student_courses',:action =>'index')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Enrollment Requests', :controller => 'admins',:action =>'studentrequests')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('Assign Instructors to Courses',:controller => 'instructor_courses',:action =>'new')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View All Instructor Assigned to Courses',:controller => 'instructor_courses',:action =>'index')  %></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<center><h1>Admin Home Page</h1></center>
+
+
