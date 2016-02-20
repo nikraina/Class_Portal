@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b4603c1-1474-4ae6-8ef2-9f664b3fa0e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/students/viewcourses.html.erb" afterPath="$PROJECT_DIR$/app/views/students/viewcourses.html.erb" />
-    </list>
+    <list default="true" id="6b4603c1-1474-4ae6-8ef2-9f664b3fa0e3" name="Default" comment="" />
     <ignored path="Class_Portal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
