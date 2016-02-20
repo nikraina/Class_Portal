@@ -28,7 +28,7 @@
                 <td><%= @course.is_active %><br></td>
                 <td><%= @course.start_date %><br></td>
                 <td><%= @course.end_date %><br></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show Course Details', id: @course.id , :controller => 'courses', :action => 'show' %></button></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show Course Detail', id: @course.id , :controller => 'courses', :action => 'show' %></button></td>
                 <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Drop Course', id: student_course.id , :controller => 'student_courses', :action => 'update', :drop => true  %></button></td>
               </tr>
           <%	 end %>
