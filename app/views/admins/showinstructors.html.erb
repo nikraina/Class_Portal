@@ -11,7 +11,7 @@
 
       <tbody>
       <% @users.each do |user| %>
-        <% if !@user.nil? %>
+        <% if !@users.nil? %>
           <%	if user.is_instructor  %>
             <tr>
               <td><%= user.email %><br></td>
