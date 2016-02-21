@@ -1,6 +1,8 @@
 == README
 CSC 517 Program 1- Class Portal, a Ruby on Rails Web Application
 
+PLEASE use CHROME while reviewing our application
+
 Code Repo: https://github.com/nikraina/Class_Portal
 
 Preconfigured Super-Admin Credentials: 
