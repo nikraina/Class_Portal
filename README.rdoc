@@ -5,6 +5,8 @@ PLEASE use CHROME while reviewing our application
 
 Code Repo: https://github.com/nikraina/Class_Portal
 
+Application Link: https://class-ncsu.herokuapp.com/
+
 Preconfigured Super-Admin Credentials: 
 
 Email: master@master.com 
