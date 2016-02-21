@@ -63,8 +63,10 @@ class UsersController < ApplicationController
     @user = User.find_by_id(params[:id])
     if @currentuser==@user
       flash[:notice]="Error: Cannot Delete Yourself!!"
+      redirect_to(:controller => 'users', :action => 'index')
     elsif @user.email == 'master@master.com'
       flash[:notice]="Error: Cannot Delete Master Yoda!!"
+      redirect_to(:controller => 'users', :action => 'index')
     elsif @user.is_admin
       @user.destroy
       redirect_to(:controller => 'users', :action => 'index')
