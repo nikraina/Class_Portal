@@ -1,4 +1,58 @@
 == README
+CSC 517 Program 1- Class Portal, a Ruby on Rails Web Application
+
+Code Repo: https://github.com/nikraina/Class_Portal
+
+Preconfigured Super-Admin Credentials: 
+
+Email: master@master.com 
+
+Password: master 
+
+(Please don't change these credentials. We don't want our reviewers to experience troubles because of your mischeif.)
+
+Points to note: We are yet to implement bonus functionalities. Next system update on Thursday - 25th Feb 2016.
+
+Description of all tabs on left side of the page:
+
+1. View Profile : Gives details of user profile. Email, Name, is_admin?? (true if user is admin), is_instructor?? (true if user is instructor).
+
+2. New User : Provides functionality to add a new student/instructor. Email, Name, Password, is_admin?? (true if user is admin), is_instructor?? (true if user is instructor). If student, don't select any checkboxes.
+
+3. Display All Users : Gives list of all registered users in the database. You(Admin) can also edit or delete particular user from this page.
+
+4. Display All Instructors : Gives list of all instructors in the database. You(Admin) can also edit or delete or view history of particular instructor on this page.
+
+5. Display All Students : Gives list of all students in the database. You(Admin) can also edit or delete or view history of particular student on this page.
+
+6. Add New Courses : Provides a form to create new courses. Course (Course ID), Instructor email, Title, Description, Materials, Start date
+
+7. Display All Courses : Displays a list of all courses.
+
+8. Enroll Students To Course : Enrolls students to courses by entering all required details.
+
+9. View Enrollment Requests : Window to view all enrollment requests and take action for them.
+
+10. Assigns Instructors to Course : Lets you(Admin) assign instructors to course by specifying course code and email id of instructor.
+
+11. View All Instructors Assigned tou Courses : Provides a comprehensive list of all the instructors assigned to all the courses.
+
+
+What ifs...
+1. If you try to sign up using email ids already used, you will get an error message "User cannot be created".
+
+2. If you try to assign again an instructor that is already assigned to that course, you will get an error message "Instructor could not be Assigned".
+
+3. If you try to delete your own profile or profile of preconfigured admin, you will get an error message "You cannot delete yourself" or "You cannot delete pre-configured admin".
+
+4. If admin tries to delete a student who is currently enrolled in the course, the student gets deleted and all its dependencies will be removed.
+
+5. If admin tries to delete an instructor who is currently taking the course, the instructor will not be deleted.
+
+6. If any two reviewers are simultaneously reviewing and one reviewer edits one of the user details at the same time when other reviewer is accessing that particular user, the system might function improperly and you will get a notice "Something went wrong". 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
