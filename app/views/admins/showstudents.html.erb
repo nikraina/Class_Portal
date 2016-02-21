@@ -11,6 +11,7 @@
 
       <tbody>
       <% @users.each do |user| %>
+        <% if !@user.nil? %>
           <%	if !user.is_instructor and !user.is_admin %>
               <tr>
                 <td><%= user.email %><br></td>
@@ -20,6 +21,7 @@
                 <td><button type="button" class="btn btn-default navbar-btn"><%=link_to('History',:controller => 'student_courses',:action =>'studenthistory',id: user.id )  %></button></td>
               </tr>
           <%  end %>
+        <% end %>
       <% end %>
       </tbody>
     </table>

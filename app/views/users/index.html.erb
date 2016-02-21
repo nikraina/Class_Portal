@@ -12,15 +12,17 @@
       </thead>
 
       <tbody>
-      <% @users.each do |user| %>
-          <tr>
-            <td><%= user.email %><br></td>
-            <td><%= user.name %><br></td>
-            <td><%= user.is_admin %><br></td>
-            <td><%= user.is_instructor %><br></td>
-            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'users', :action => 'edit',id: user.id %></button><br></td>
-            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: user.id, :action => 'destroy' %></button><br></td>
-          </tr>
+      <% if !@user.nil? %>
+        <% @users.each do |user| %>
+            <tr>
+              <td><%= user.email %><br></td>
+              <td><%= user.name %><br></td>
+              <td><%= user.is_admin %><br></td>
+              <td><%= user.is_instructor %><br></td>
+              <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'users', :action => 'edit',id: user.id %></button><br></td>
+              <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: user.id, :action => 'destroy' %></button><br></td>
+            </tr>
+        <% end %>
       <% end %>
       </tbody>
     </table>

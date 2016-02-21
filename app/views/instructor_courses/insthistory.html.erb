@@ -14,12 +14,14 @@
       <%if !@inst_courses.nil? %>
           <% @inst_courses.each do |inst_course| %>
               <% @course = Course.find_by_course_id(inst_course.course_id) %>
-              <%	if !@course.is_active  %>
-              <tr>
-                <td><%= inst_course.course_id %><br></td>
-                <td><%= inst_course.email %><br></td>
-              </tr>
-              <%	 end %>
+              <% if !@course.nil? %>
+                <%if !@course.is_active  %>
+                <tr>
+                  <td><%= inst_course.course_id %><br></td>
+                  <td><%= inst_course.email %><br></td>
+                </tr>
+                <%end %>
+              <% end %>
           <% end %>
       <%else %>
           <% flash[:notice] = "This user has no course History" %>

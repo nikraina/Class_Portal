@@ -48,9 +48,15 @@ class InstructorCoursesController < ApplicationController
 
   def destroy
     @instructor_course = InstructorCourse.find(params[:id])
-    if(Course.exists?(:email => @instructor_course.email))
-      flash[:notice]="Error could not Delete; This Instructor is the primary instructor of this Course:First edit Course details"
-      redirect_to(:controller => 'instructor_courses', :action => 'index')
+    @currcourse = Course.find_by_email(@instructor_course.email)
+    if !@currcourse.nil? #(Course.exists?(:email => @instructor_course.email))
+      if @currcourse.course_id == @instructor_course.course_id
+        flash[:notice]="Error could not Delete; This Instructor is the primary instructor of this Course:First edit Course details"
+        redirect_to(:controller => 'instructor_courses', :action => 'index')
+      else
+        @instructor_course.destroy
+        redirect_to(:controller => 'instructor_courses', :action => 'index')
+      end
     else
         @instructor_course.destroy
         redirect_to(:controller => 'instructor_courses', :action => 'index')

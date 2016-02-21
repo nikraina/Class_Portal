@@ -9,16 +9,20 @@
   </tr>
   </thead>
   <tbody>
+  <% if !@instructor_courses.nil? %>
   <% @instructor_courses.each do |instructor_course| %>
       <tr>
         <% @user = User.find_by_email(instructor_course.email)%>
+        <% if !@user.nil? %>
             <td><%= instructor_course.course_id %><br></td>
             <td><%= instructor_course.email %><br></td>
             <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'instructor_courses', :action => 'edit', id: instructor_course.id %></button></td>
             <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Remove',id: instructor_course.id, :action => 'destroy' %></button></td>
             <td><button type="button" class="btn btn-default navbar-btn"><%=link_to('View History',:controller => 'instructor_courses',:action =>'insthistory',id: @user.id )  %></button></td>
+        <% end %>
       </tr>
   <% end %>
+  <%end %>
   </tbody>
 </table>
  </center>

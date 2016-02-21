@@ -28,8 +28,10 @@
                 <td><%= course.start_date %><br></td>
                 <td><%= course.end_date %><br></td>
                 <%if @user.is_admin %>
-                  <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show', id: course.id , :action => 'show' %></button></td>
-                  <td><button type="button" class="btn btn-default navbar-btn"><%= link_to'Edit', :controller => 'courses' , :action => 'edit', id: course.id%></button></td>
+                    <% if course.is_active %>
+                      <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show', id: course.id , :action => 'show' %></button></td>
+                      <td><button type="button" class="btn btn-default navbar-btn"><%= link_to'Edit', :controller => 'courses' , :action => 'edit', id: course.id%></button></td>
+                    <% end %>
                   <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: course.id, :action => 'destroy' %></button></td>
 
                 <%elsif course.is_active%>

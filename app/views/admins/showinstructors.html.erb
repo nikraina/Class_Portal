@@ -11,16 +11,18 @@
 
       <tbody>
       <% @users.each do |user| %>
-        <%	if user.is_instructor  %>
-          <tr>
-            <td><%= user.email %><br></td>
-            <td><%= user.name %><br></td>
-            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'users', :action => 'edit',id: user.id %></button><br></td>
-            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: user.id,:controller => 'users', :action => 'destroy' %></button><br></td>
-            <td><button type="button" class="btn btn-default navbar-btn"><%=link_to('View History',:controller => 'instructor_courses',:action =>'insthistory',id: user.id )  %></button></td>
-          </tr>
-        <%  end %>
-      <% end %>
+        <% if !@user.nil? %>
+          <%	if user.is_instructor  %>
+            <tr>
+              <td><%= user.email %><br></td>
+              <td><%= user.name %><br></td>
+              <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'users', :action => 'edit',id: user.id %></button><br></td>
+              <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: user.id,:controller => 'users', :action => 'destroy' %></button><br></td>
+              <td><button type="button" class="btn btn-default navbar-btn"><%=link_to('View History',:controller => 'instructor_courses',:action =>'insthistory',id: user.id )  %></button></td>
+            </tr>
+          <%  end %>
+        <% end %>
+      <% end%>
       </tbody>
     </table>
   </center>

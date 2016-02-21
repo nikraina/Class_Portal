@@ -19,14 +19,16 @@
       <% @course=Course.find_by_id(params[:id]) %>
       <% @user=User.find_by_id(session[:id]) %>
       <tr>
-        <td><%= @course.course_id %><br></td>
-        <td><%= @course.email %><br></td>
-        <td><%= @course.title %><br></td>
-        <td><%= @course.description %><br></td>
-        <td><%= @course.materials %><br></td>
-        <td><%= @course.is_active %><br></td>
-        <td><%= @course.start_date %><br></td>
-        <td><%= @course.end_date %><br></td>
+        <% if !@course.nil? %>
+          <td><%= @course.course_id %><br></td>
+          <td><%= @course.email %><br></td>
+          <td><%= @course.title %><br></td>
+          <td><%= @course.description %><br></td>
+          <td><%= @course.materials %><br></td>
+          <td><%= @course.is_active %><br></td>
+          <td><%= @course.start_date %><br></td>
+          <td><%= @course.end_date %><br></td>
+        <% end %>
       </tr>
       </tbody>
     </table>

@@ -15,10 +15,12 @@
       <% @user=User.find_by_id(params[:id]) %>
       <% @currentuser=User.find_by_id(session[:id]) %>
       <tr>
-        <td><%= @user.email %><br></td>
-        <td><%= @user.name %><br></td>
-        <td><%= @user.is_admin %><br></td>
-        <td><%= @user.is_instructor %><br></td>
+        <% if !@user.nil? %>
+          <td><%= @user.email %><br></td>
+          <td><%= @user.name %><br></td>
+          <td><%= @user.is_admin %><br></td>
+          <td><%= @user.is_instructor %><br></td>
+        <% end %>
       </tr>
       </tbody>
     </table>

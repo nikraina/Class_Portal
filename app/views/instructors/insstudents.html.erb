@@ -17,21 +17,25 @@
       </thead>
       <tbody>
       <% @students.each do |student_course| %>
-          <% @courses.each do |course| %>
-          <%	@active = Course.find_by_course_id(course.course_id)  %>
-          <% if student_course.course_id == course.course_id and student_course.is_curr_enrolled and @active.is_active%>
-           <%	 @user = User.find_by_email(student_course.email) %>
-              <tr>
-                <td><%= student_course.course_id %><br></td>
-                <td><%= student_course.email %><br></td>
-                <td><%= student_course.grade %><br></td>
-                <td><%= student_course.is_curr_enrolled %><br></td>
-                <td><%= student_course.has_requested %><br></td>
-                <td><%= student_course.is_denied %><br></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Grades', id: student_course.id,:controller => 'student_courses', action: 'edit'%></button></td>
+          <% if !@courses.nil? %>
+            <% @courses.each do |course| %>
+            <%	@active = Course.find_by_course_id(course.course_id)  %>
+            <% if student_course.course_id == course.course_id and student_course.is_curr_enrolled and @active.is_active%>
+             <%	 @user = User.find_by_email(student_course.email) %>
+                <% if !@user.nil? %>
+                  <tr>
+                    <td><%= student_course.course_id %><br></td>
+                    <td><%= student_course.email %><br></td>
+                    <td><%= student_course.grade %><br></td>
+                    <td><%= student_course.is_curr_enrolled %><br></td>
+                    <td><%= student_course.has_requested %><br></td>
+                    <td><%= student_course.is_denied %><br></td>
+                    <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Grades', id: student_course.id,:controller => 'student_courses', action: 'edit'%></button></td>
                   </tr>
-          <%	 end %>
-          <%	 end %>
+                <% end %>
+            <%	 end %>
+            <%	 end %>
+          <% end %>
       <% end %>
       </tbody>
     </table>

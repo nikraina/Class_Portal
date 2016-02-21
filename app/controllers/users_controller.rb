@@ -61,10 +61,28 @@ class UsersController < ApplicationController
       flash[:notice]="Error: Cannot Delete Yourself!!"
     elsif @user.email == 'master@master.com'
       flash[:notice]="Error: Cannot Delete Master Yoda!!"
-    else
+    elsif @user.is_admin
       @user.destroy
+      redirect_to(:controller => 'users', :action => 'index')
+    elsif @user.is_instructor
+        @course = Course.find_by_email(@user.email)
+        @instructorcourse = InstructorCourse.find_by_email(@user.email)
+        if !@course.nil?
+          flash[:notice]="Error: This Instructor is a primary instructor for a course, first edit course details!!"
+          redirect_to(:controller => 'users', :action => 'index')
+        elsif !@instructorcourse.nil?
+          @instructorcourse.destroy
+          @user.destroy
+          redirect_to(:controller => 'users', :action => 'index')
+        end
+    elsif !@user.is_instructor and !@user.is_admin
+        @studentcourse = StudentCourse.find_by_email(@user.email)
+        if !@studentcourse.nil
+          @studentcourse.destroy
+        end
+        @user.destroy
+        redirect_to(:controller => 'users', :action => 'index')
     end
-    redirect_to(:controller => 'users', :action => 'index')
   end
 
   private

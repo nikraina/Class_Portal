@@ -1,4 +1,4 @@
-<%@stu = User.find_by_id(params[:id])	  %>
+<%@stu = User.find_by_id(params[:id]) %>
 <%@stu_courses = StudentCourse.find_all_by_email(@stu.email) %>
 <div>
   <center>
@@ -15,13 +15,15 @@
   <%if !@stu_courses.nil? %>
       <% @stu_courses.each do |student_course| %>
           <% @course = Course.find_by_course_id(student_course.course_id) %>
-          <%	if !@course.is_active and student_course.is_curr_enrolled  %>
-          <tr>
-            <td><%= student_course.course_id %><br></td>
-            <td><%= student_course.email %><br></td>
-            <td><%= student_course.grade %><br></td>
-          </tr>
-          <%	end  %>
+          <% if !@course.nil? %>
+            <% if !@course.is_active and student_course.is_curr_enrolled  %>
+              <tr>
+                <td><%= student_course.course_id %><br></td>
+                <td><%= student_course.email %><br></td>
+                <td><%= student_course.grade %><br></td>
+              </tr>
+            <%	end  %>
+          <% end %>
       <% end %>
   <%else %>
       <% flash[:notice] = "This user has no course History" %>
