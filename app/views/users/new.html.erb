@@ -1,9 +1,9 @@
-<% @user = User.find_by_id(session[:id])%>
+<% @currentuser = User.find_by_id(session[:id])%>
 
 <center>
   <div>
     <h1>New user</h1>
-    <% if !@user %>
+    <% if !@currentuser %>
         <%= form_for(:user,:url =>{:action => 'create'}) do |f| %>
             <div class="field">
               <%= f.label(:email,'Email ID') %><br>

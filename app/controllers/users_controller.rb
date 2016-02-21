@@ -23,16 +23,17 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @currentuser = User.find_by_id(session[:id])
     if @user.save
       flash[:notice]="User was successfully created."
-      if @user.is_admin
+      if @currentuser.is_admin
         redirect_to(:controller => 'users', :action => 'index')
       else
         redirect_to(:controller => 'home', :action => 'login')
       end
     else
       flash[:notice]="User couldnot be created !!"
-      if @user.is_admin
+      if @currentuser.is_admin
         redirect_to(:controller => 'users', :action => 'new')
       else
         redirect_to(:controller => 'home', :action => 'login')

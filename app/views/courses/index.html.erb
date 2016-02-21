@@ -1,3 +1,4 @@
+<% @user = User.find(session[:id]) %>
 <div class="container">
   <center>
     <h1>All Courses</h1>
@@ -14,7 +15,7 @@
             <th>  End Date  </th>
           </tr>
           </thead>
-
+          <%if  !@courses.nil? %>
           <tbody>
           <% @courses.each do |course| %>
               <tr>
@@ -26,7 +27,6 @@
                 <td><%= course.is_active %><br></td>
                 <td><%= course.start_date %><br></td>
                 <td><%= course.end_date %><br></td>
-                <% @user = User.find(session[:id]) %>
                 <%if @user.is_admin %>
                   <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show', id: course.id , :action => 'show' %></button></td>
                   <td><button type="button" class="btn btn-default navbar-btn"><%= link_to'Edit', :controller => 'courses' , :action => 'edit', id: course.id%></button></td>
@@ -38,6 +38,7 @@
               </tr>
           <% end %>
           </tbody>
+          <%end %>
         </table>
     </center>
   </div>

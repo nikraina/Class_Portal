@@ -48,9 +48,11 @@ class CoursesController < ApplicationController
 
   def destroy
     @course= Course.find_by_id(params[:id])
-    @course.destroy
-    flash[:notice]="The course has been Deleted !!"
-    redirect_to(:controller => 'courses', :action => 'index')
+    if !@course.nil?
+      @course.destroy
+      flash[:notice]="The course has been Deleted !!"
+      redirect_to(:controller => 'courses', :action => 'index')
+    end
   end
 
   private
