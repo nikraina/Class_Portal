@@ -3,7 +3,10 @@ CSC 517 Program 1- Class Portal, a Ruby on Rails Web Application
 
 Code Repo: https://github.com/nikraina/Class_Portal
 
-Preconfigured Super-Admin Credentials: Email: master@master.com Password: master (Please don't change these credentials. We don't want our reviewers to experience troubles because of your mischeif.)
+Preconfigured Super-Admin Credentials: 
+Email: master@master.com 
+Password: master 
+(Please don't change these credentials. We don't want our reviewers to experience troubles because of your mischeif.)
 
 Points to note: We are yet to implement bonus functionalities. Next system update on Thursday - 25th Feb 2016.
 
@@ -47,6 +50,7 @@ What ifs...
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
