@@ -113,4 +113,18 @@ Portal::Application.routes.draw do
   get 'student_courses/:id/studenthistory' => 'student_courses#studenthistory'
   post 'student_courses/:id/studenthistory' => 'student_courses#studenthistory'
 
+
+
+  #Messages
+  get 'messages/new' => 'messages#new'
+  post 'messages/new' => 'messages#new'
+  get 'messages/create' => 'messages#create'
+  post 'messages/create' => 'messages#create'
+  get 'messages/show' => 'messages#show'
+  post 'messages/show' => 'messages#show'
+  get 'messages/:id/reply' => 'messages#reply'
+  post 'messages/:id/reply' => 'messages#reply'
+  get 'messages/showreply' => 'messages#showreply'
+  post 'messages/showreply' => 'messages#showreply'
+
 end

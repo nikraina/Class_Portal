@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219185421) do
+ActiveRecord::Schema.define(version: 20160224010453) do
 
   create_table "courses", force: true do |t|
     t.string   "course_id",   limit: 100, null: false
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(version: 20160219185421) do
     t.datetime "updated_at"
   end
 
+  create_table "messages", force: true do |t|
+    t.string   "sender_email",   limit: 100, null: false
+    t.string   "reciever_email", limit: 100, null: false
+    t.string   "msg_text"
+    t.boolean  "is_req"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "student_courses", force: true do |t|
     t.string   "course_id",        limit: 100, null: false
     t.string   "email",            limit: 100, null: false
@@ -48,8 +57,8 @@ ActiveRecord::Schema.define(version: 20160219185421) do
     t.string   "email",         limit: 100
     t.string   "password",      limit: 100
     t.string   "name",          limit: 100
-    t.boolean  "is_admin"
-    t.boolean  "is_instructor"
+    t.boolean  "is_admin",                  default: false
+    t.boolean  "is_instructor",             default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

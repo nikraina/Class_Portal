@@ -1,0 +1,70 @@
+<center>
+  <div>
+    <% if !@currentuser.is_admin %>
+
+        <h2>My Recieved Messages</h2>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>  E-mail  </th>
+            <th>  Name  </th>
+            <th>  Message </th>
+          </tr>
+          </thead>
+
+          <tbody>
+            <% if !@from_messages.nil? %>
+                <% @from_messages.each do |message| %>
+                    <tr>
+                    <td><%= message.sender_email %><br></td>
+                    <% @sender = User.where("email = ?", message.sender_email) %>
+                      <% @sender.each do |sender| %>
+                          <td><%= sender.name %><br></td>
+                          <td><%= message.msg_text %><br></td>
+                          <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Reply', :controller => 'messages', :action => 'showreply',id: sender.id %></button><br></td>
+                    <%end %>
+                    </tr>
+                <% end %>
+            <% end %>
+          </tbody>
+          </table>
+
+        <h2>My Sent Messages</h2>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>  E-mail  </th>
+            <th>  Name  </th>
+            <th>  Message </th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <% if !@to_messages.nil? %>
+              <% @to_messages.each do |message| %>
+                  <tr>
+                    <td><%= message.reciever_email %><br></td>
+                    <% @reciever = User.where("email = ?", message.reciever_email) %>
+                    <% @reciever.each do |reciever| %>
+                        <td><%= reciever.name %><br></td>
+                    <% end %>
+                    <td><%= message.msg_text %><br></td>
+                  </tr>
+              <% end %>
+          <% end %>
+          </tbody>
+        </table>
+
+
+    <% end%>
+  </div>
+</center>
+<nav class="navbar navbar-default">
+  <div class="btn-group-vertical" role="group" aria-label="...">
+    <% if @currentuser.is_instructor %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+    <% else %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+    <%end %>
+  </div>
+</nav>

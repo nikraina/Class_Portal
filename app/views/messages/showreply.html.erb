@@ -1,0 +1,39 @@
+<% @currentuser = User.find_by_id(session[:id])%>
+<% @recieveruser = User.find_by_id(params[:id])%>
+<center>
+  <div>
+    <h1>Reply</h1>
+    <% if !@currentuser.is_admin %>
+        <%= form_for(:message,:url =>{:action => 'reply', id: params[:id]}) do |f| %>
+
+            <div class="field">
+              <%= f.label(:sender_email,'Sender Email ID') %><br>
+              <%=h @currentuser.email %>
+
+            </div>
+            <div class="field">
+              <%= f.label(:sender_email,'Reciever Email ID') %><br>
+              <%=h @recieveruser.email %>
+              <!%= f.label(:reciever_email,'Reciever Email ID') %><br>
+              <!%= f.collection_select :reciever_email, @users, :email, :name %>
+            </div>
+            <div class="field">
+              <%= f.label(:msg_text,'Write Your Message Here') %><br>
+              <%= f.text_area(:msg_text) %>
+            </div>
+            <div class="actions">
+              <%= f.submit "Send"%>
+            </div>
+        <% end%>
+    <% end%>
+  </div>
+</center>
+<nav class="navbar navbar-default">
+  <div class="btn-group-vertical" role="group" aria-label="...">
+    <% if @currentuser.is_instructor %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+    <% else %>
+        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+    <%end %>
+  </div>
+</nav>
