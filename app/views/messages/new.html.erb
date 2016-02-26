@@ -11,7 +11,7 @@
                 <%=h @currentuser.email %>
               </div>
               <div class="field">
-                <%= f.label(:reciever_email,'Reciever Email ID') %><br>
+                <%= f.label(:reciever_email,'Reciever Name')%><br>
                 <%= f.collection_select :reciever_email, @users, :email, :name %>
               </div>
               <div class="field">

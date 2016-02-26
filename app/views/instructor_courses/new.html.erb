@@ -5,11 +5,11 @@
       <%= form_for(:instructor_course,:url =>{:action => 'create'}) do |f| %>
         <div class="field">
           <%= f.label :course_id %><br>
-          <%= f.text_field :course_id %>
+          <%= f.collection_select :course_id, @courses, :course_id, :course_id %>
         </div>
         <div class="field">
-          <%= f.label :email %><br>
-          <%= f.text_field :email %>
+          <%= f.label :email,'Instructor Email' %><br>
+          <%= f.collection_select :email, @inst, :email, :email %>
         </div>
 
         <div class="actions">

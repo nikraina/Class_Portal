@@ -1,3 +1,4 @@
+<% @currentuser= User.find_by_id(session[:id]) %>
 <div class ="container">
   <center>
     <h1> All Users</h1>
@@ -20,7 +21,9 @@
               <td><%= user.is_admin %><br></td>
               <td><%= user.is_instructor %><br></td>
               <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'users', :action => 'edit',id: user.id %></button><br></td>
+              <% if @currentuser != user and  user.email != 'master@master.com' %>
               <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: user.id, :action => 'destroy' %></button><br></td>
+              <%	 end %>
             </tr>
         <% end %>
       <% end %>

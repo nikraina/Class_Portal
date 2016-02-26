@@ -13,11 +13,13 @@ class CoursesController < ApplicationController
 
   def new
     @course = Course.new
+    @inst = User.where("is_instructor = ?", true)
   end
 
 
   def edit
     @course = Course.find_by_id(params[:id])
+    @inst = User.where("is_instructor = ?", true)
   end
 
   def create
@@ -49,6 +51,14 @@ class CoursesController < ApplicationController
   def destroy
     @course= Course.find_by_id(params[:id])
     if !@course.nil?
+      @inst_course = InstructorCourse.find_by_course_id(@course.course_id)
+      if !@inst_course.nil?
+        @inst_course.destroy
+      end
+      @student_course = StudentCourse.find_by_course_id(@course.course_id)
+      if !@student_course.nil?
+        @student_course.destroy
+      end
       @course.destroy
       flash[:notice]="The course has been Deleted !!"
       redirect_to(:controller => 'courses', :action => 'index')

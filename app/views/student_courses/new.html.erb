@@ -5,34 +5,16 @@
     <h1>Enroll Students To Course</h1>
     <%= form_for(:student_course,:url =>{:action => 'create'}) do |f| %>
         <div class="field">
-          <%= f.label :course_id %><br>
-          <%= f.text_field :course_id %>
+          <%= f.label :course_id,'Course ID' %><br>
+          <%= f.collection_select :course_id, @courses, :course_id, :course_id %>
         </div>
         <div class="field">
-          <%= f.label :email %><br>
-          <%= f.text_field :email %>
-        </div>
-        <div class="field">
-          <%= f.label :grade %><br>
-          <%= f.text_field :grade %>
-        </div>
-        <div class="field">
-          <%= f.label :is_curr_enrolled %><br>
-          <%= f.check_box :is_curr_enrolled %>
-        </div>
-
-        <div class="field">
-          <%= f.label :has_requested %><br>
-          <%= f.check_box :has_requested %>
-        </div>
-
-        <div class="field">
-          <%= f.label :is_denied %><br>
-          <%= f.check_box :is_denied %>
+          <%= f.label :email,'Student Email' %><br>
+          <%= f.collection_select :email, @students, :email, :email %>
         </div>
 
         <div class="actions">
-          <%= f.submit "Send Enrollment Request" %>
+          <%= f.submit "Enroll Student" %>
         </div>
     <% end %>
 

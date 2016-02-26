@@ -8,7 +8,7 @@
         </div>
         <div class="field">
           <%= f.label "Instructor Email" %><br>
-          <%= f.text_field :email %>
+          <%= f.collection_select :email, @inst, :email, :email %>
         </div>
         <div class="field">
           <%= f.label :title %><br>

@@ -15,6 +15,8 @@ class InstructorCoursesController < ApplicationController
 
   def new
     @instructor_course = InstructorCourse.new
+    @inst = User.where("is_instructor = ?", true)
+    @courses = Course.all
   end
 
   def edit

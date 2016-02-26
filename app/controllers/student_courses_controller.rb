@@ -19,6 +19,8 @@ class StudentCoursesController < ApplicationController
 
   def new
     @student_course = StudentCourse.new
+    @students = User.where("is_admin = ? AND is_instructor = ?", false,false)
+    @courses = Course.all
   end
 
 
@@ -32,6 +34,10 @@ class StudentCoursesController < ApplicationController
     if params[:student]
       @student_course.has_requested = true
       @student_course.email = params[:email]
+    else
+      @student_course.is_curr_enrolled = true
+      @student_course.has_requested = false
+      @student_course.is_denied = false
     end
     if @student_course.save
       if params[:student]
