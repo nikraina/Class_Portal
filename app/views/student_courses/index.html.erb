@@ -16,17 +16,20 @@
   <tbody>
   <% if !@student_courses.nil? %>
     <% @student_courses.each do |student_course| %>
+    <% @course = Course.find_by_course_id(student_course.course_id) %>
         <tr>
           <%	@user = User.find_by_email(student_course.email)  %>
           <% if !@user.nil? %>
-            <td><%= student_course.course_id %><br></td>
-            <td><%= student_course.email %><br></td>
-            <td><%= student_course.grade %><br></td>
-            <td><%= student_course.is_curr_enrolled %><br></td>
-            <td><%= student_course.has_requested %><br></td>
-            <td><%= student_course.is_denied %><br></td>
-            <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Grades', id: student_course.id, action: 'edit'%></button></td>
-            <td> <button type="button" class="btn btn-default navbar-btn"><%=link_to('History',:controller => 'student_courses',:action =>'studenthistory',id: @user.id )  %></button></td>
+              <% if @course.is_active %>
+                <td><%= student_course.course_id %><br></td>
+                <td><%= student_course.email %><br></td>
+                <td><%= student_course.grade %><br></td>
+                <td><%= student_course.is_curr_enrolled %><br></td>
+                <td><%= student_course.has_requested %><br></td>
+                <td><%= student_course.is_denied %><br></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Grades', id: student_course.id, action: 'edit'%></button></td>
+                <td> <button type="button" class="btn btn-default navbar-btn"><%=link_to('History',:controller => 'student_courses',:action =>'studenthistory',id: @user.id )  %></button></td>
+              <% end %>
           <% end %>
           </tr>
     <% end %>

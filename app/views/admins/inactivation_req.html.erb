@@ -1,0 +1,28 @@
+<div class ="container">
+  <center>
+    <h1> Course Inactivation Requests</h1>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>  Course ID         </th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% if !@course_in_reqs.nil? %>
+      <% @course_in_reqs.each do |course_in_req| %>
+          <!%	if user.is_instructor  %>
+              <tr>
+                <td><%= course_in_req.course_id %></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Accept', :controller => 'courses', :action => 'make_inactive', :course_id => course_in_req.course_id %></button><br></td>
+              </tr>
+          <!%  end %>
+          <% end %>
+      <% end%>
+      </tbody>
+    </table>
+  </center>
+</div>
+<nav class="navbar navbar-default">
+  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+</nav>

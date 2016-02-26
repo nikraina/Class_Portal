@@ -65,6 +65,35 @@ class CoursesController < ApplicationController
     end
   end
 
+  def req_inactivation
+    @course_in_req = CourseInactiveRequest.new
+    @course_in_req.course_id = params[:course_id]
+    if @course_in_req.save
+      flash[:notice]="Your Request has been sent to Admin"
+      redirect_to(:controller => 'instructors', :action => 'viewinscourses')
+    else
+      flash[:notice]="Request for this course has already been generated"
+      redirect_to(:controller => 'instructors', :action => 'viewinscourses')
+    end
+  end
+
+  def make_inactive
+    @course = Course.find_by_course_id(params[:course_id])
+    if @course.update_attributes(:is_active => false)
+      @course_in_req = CourseInactiveRequest.find_by_course_id(params[:course_id])
+      if @course_in_req.destroy
+        flash[:notice]="The course has been marked Inactive"
+        redirect_to(:controller => 'admins', :action => 'inactivation_req')
+      else
+        flash[:notice]="The course could not be marked inactive"
+        redirect_to(:controller => 'admins', :action => 'inactivation_req')
+      end
+    else
+      flash[:notice]="The course could not be marked inactive"
+      redirect_to(:controller => 'admins', :action => 'inactivation_req')
+    end
+  end
+
   private
 
     def set_course

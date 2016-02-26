@@ -15,9 +15,13 @@ Portal::Application.routes.draw do
   get 'admins/showinstructors' => 'admins#showinstructors'
   post 'admins/showinstructors' => 'admins#showinstructors'
   get 'admins/showstudents' => 'admins#showstudents'
-  post 'admins/showstudents' => 'admins#students'
+  post 'admins/showstudents' => 'admins#showstudents'
+  get 'admins/showadmins' => 'admins#showadmins'
+  post 'admins/showadmins' => 'admins#showadmins'
   get 'admins/studentrequests' => 'admins#studentrequests'
   post 'admins/studentrequests' => 'admins#studentrequests'
+  get 'admins/inactivation_req' => 'admins#inactivation_req'
+  post 'admins/inactivation_req' => 'admins#inactivation_req'
 
   #courses
   get 'courses/new' => 'courses#new'
@@ -34,8 +38,11 @@ Portal::Application.routes.draw do
   patch 'courses/:id/update' => 'courses#update'
   get 'courses/:id/destroy' => 'courses#destroy'
   post 'courses/:id/destroy' => 'courses#destroy'
-  #post 'courses/showsearchresults' => 'courses#showsearchresults'
-  #get 'courses/showsearchresults' => 'courses#showsearchresults'
+  post 'courses/req_inactivation' => 'courses#req_inactivation'
+  get 'courses/req_inactivation' => 'courses#req_inactivation'
+  post 'courses/make_inactive' => 'courses#make_inactive'
+  get 'courses/make_inactive' => 'courses#make_inactive'
+
 
 
   #users
@@ -77,6 +84,8 @@ Portal::Application.routes.draw do
   get 'students/showsearchresults' => 'students#searchquery'
   get 'students/enrollmentrequest' => 'students#enrollmentrequest'
   post 'students/enrollmentrequest' => 'students#enrollmentrequest'
+  get 'students/showmyrequests' => 'students#showmyrequests'
+  post 'students/showmyrequests' => 'students#showmyrequests'
 
 
   #instructorCources

@@ -8,6 +8,7 @@
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My Active Courses',:controller => 'students',:action =>'viewcourses')  %></button>
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My History',:controller => 'student_courses',:action =>'studenthistory',id: @user.id )  %></button>
           <button type="button" class="btn btn-default navbar-btn"><%= link_to('Search/View Courses', :controller => 'students' , :action => 'searchquery')%></button>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('View my Requests', :controller => 'students' , :action => 'showmyrequests')%></button>
           <button type="button" class="btn btn-default navbar-btn"><%= link_to('Create New Message', :controller => 'messages' , :action => 'new')%></button>
           <button type="button" class="btn btn-default navbar-btn"><%= link_to('View my Messages', :controller => 'messages' , :action => 'show')%></button>
         </div>

@@ -1,0 +1,32 @@
+<div><center><h1>My Enrollment Requests</h1></center>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>  Course ID               </th>
+      <th>  Student Email           </th>
+      <th>  Has Requested Enrollment</th>
+      <th>  Enrollment Denied       </th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <% @student_courses.each do |student_course| %>
+        <% if !@student_courses.nil? %>
+            <!%if student_course.has_requested or student_course.is_denied%>
+                <tr>
+                    <td><%= student_course.course_id %><br></td>
+                    <td><%= student_course.email %><br></td>
+                    <td><%= student_course.has_requested %><br></td>
+                    <td><%= student_course.is_denied %><br></td>
+                </tr>
+            <!%end %>
+        <%end %>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+  </nav>
+</div>

@@ -30,6 +30,11 @@ class StudentsController < UsersController
       @courses
   end
 
+  def showmyrequests
+    @user = User.find(session[:id])
+    @student_courses = StudentCourse.where("email = ? AND (has_requested = ? OR is_denied = ?)", @user.email, true, true)
+  end
+
   def enrollmentrequest
     @user = User.find(session[:id])
     @student_course = StudentCourse.new

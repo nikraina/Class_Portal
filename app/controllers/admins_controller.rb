@@ -13,8 +13,16 @@ class AdminsController < UsersController
     @users = User.all
   end
 
+  def showadmins
+    @users = User.where("is_admin = ?", true)
+  end
+
   def studentrequests
 
+  end
+
+  def inactivation_req
+    @course_in_reqs = CourseInactiveRequest.all
   end
 
 

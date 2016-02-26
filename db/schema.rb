@@ -11,15 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224010453) do
+ActiveRecord::Schema.define(version: 20160226013754) do
+
+  create_table "course_inactive_requests", force: true do |t|
+    t.string   "course_id",  limit: 100, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "courses", force: true do |t|
-    t.string   "course_id",   limit: 100, null: false
+    t.string   "course_id",   limit: 100,                 null: false
     t.string   "email",       limit: 100
     t.string   "title",       limit: 100
     t.string   "description", limit: 100
     t.string   "materials"
-    t.boolean  "is_active"
+    t.boolean  "is_active",               default: false
     t.date     "start_date"
     t.date     "end_date"
     t.datetime "created_at"
@@ -43,12 +49,12 @@ ActiveRecord::Schema.define(version: 20160224010453) do
   end
 
   create_table "student_courses", force: true do |t|
-    t.string   "course_id",        limit: 100, null: false
-    t.string   "email",            limit: 100, null: false
+    t.string   "course_id",        limit: 100,                 null: false
+    t.string   "email",            limit: 100,                 null: false
     t.string   "grade",            limit: 1
-    t.boolean  "is_curr_enrolled"
-    t.boolean  "has_requested"
-    t.boolean  "is_denied"
+    t.boolean  "is_curr_enrolled",             default: false
+    t.boolean  "has_requested",                default: false
+    t.boolean  "is_denied",                    default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

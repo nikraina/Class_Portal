@@ -33,6 +33,7 @@
                 <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Materials', id: @course.id , :controller => 'courses', action:  'edit'  %></td></button>
                 <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'View All Students in Course', id: @course.id , :controller => 'student_courses', :action => 'studentcourses' %></button></td>
                 <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show Course Details', id: @course.id , :controller => 'courses', :action => 'show' %></button></td>
+                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Request Inactivation', :course_id => @course.course_id , :controller => 'courses', :action => 'req_inactivation' %></button></td>
               </tr>
             <% end %>
           <% end %>

@@ -16,7 +16,7 @@ class InstructorCoursesController < ApplicationController
   def new
     @instructor_course = InstructorCourse.new
     @inst = User.where("is_instructor = ?", true)
-    @courses = Course.all
+    @courses = Course.where("is_active = ?", true)
   end
 
   def edit

@@ -20,7 +20,7 @@ class StudentCoursesController < ApplicationController
   def new
     @student_course = StudentCourse.new
     @students = User.where("is_admin = ? AND is_instructor = ?", false,false)
-    @courses = Course.all
+    @courses = Course.where("is_active = ?", true)
   end
 
 

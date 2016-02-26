@@ -7,6 +7,7 @@
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Profile',id: @user.id, :controller => 'users',:action =>'show')  %></button>
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Users',:controller => 'users',:action =>'new' ) %></button>
           <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Users',:controller => 'users',:action =>'index') %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Admins',:controller => 'admins',:action =>'showadmins') %></button>
           <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Instructors',:controller => 'admins',:action =>'showinstructors') %></button>
           <button type="button" class="btn btn-default navbar-btn"><%= link_to('Display all Students',:controller => 'admins',:action =>'showstudents') %></button>
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('Add New Courses',:controller => 'courses',:action =>'new' ) %> </button>
@@ -16,6 +17,7 @@
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Enrollment Requests', :controller => 'admins',:action =>'studentrequests')  %></button>
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('Assign Instructors to Courses',:controller => 'instructor_courses',:action =>'new')  %></button>
           <button type="button" class="btn btn-default navbar-btn"><%=link_to('View All Instructor Assigned to Courses',:controller => 'instructor_courses',:action =>'index')  %></button>
+          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View All Inactive Requests',:controller => 'admins',:action =>'inactivation_req')  %></button>
         </div>
       </div>
     </div>
