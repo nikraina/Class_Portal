@@ -27,9 +27,11 @@
               <td><%= course.is_active %><br></td>
               <td><%= course.start_date %><br></td>
               <td><%= course.end_date %><br></td>
-              <td><button type="button" class="btn btn-default navbar-btn"><%= link_to('Show', :controller => 'courses', :action => 'show', :id => course.id)  %></button></td>
+              <td><%=link_to({ :controller => 'courses', :action => 'show', :id => course.id}, {:class => 'btn btn-default'}) do%>
+                    <i>Show</i><%end%></td>
               <%if course.is_active %>
-                  <td><button type="button" class="btn btn-default navbar-btn"><%= link_to('Enroll', :controller => 'students', :action => 'enrollmentrequest', :course_id => course.course_id)  %></button></td>
+                  <td><%=link_to({ :controller => 'students', :action => 'enrollmentrequest', :course_id => course.course_id}, {:class => 'btn btn-default'}) do%>
+                        <i>Enroll</i><%end%></td>
               <%end%>
             </tr>
         <% end %>
@@ -40,8 +42,10 @@
 </div>
 <nav class="navbar navbar-default">
   <div class="btn-group-vertical" role="group" aria-label="...">
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+    <%=link_to({:controller => 'students' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+        <i>Back</i><%end%>
     <%@courses = Course.all %>
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Show All Courses', :controller => 'courses' , :action => 'index')%></button>
+    <%=link_to({:controller => 'courses' , :action => 'index'}, {:class => 'btn btn-default'}) do%>
+        <i>Show All Courses</i><%end%>
   </div>
 </nav>

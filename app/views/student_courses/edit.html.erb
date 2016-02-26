@@ -46,12 +46,15 @@
   <nav class="navbar navbar-default">
 <% if @user.is_admin %>
         <%	 if params[:viewrequestsadmin] %>
-            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'studentrequests')%></button>
+            <%=link_to({:controller => 'admins' , :action => 'studentrequests' }, {:class => 'btn btn-default'}) do%>
+                <i>Back</i><%end%>
         <% else%>
-            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'student_courses' , :action => 'index')%></button>
+            <%=link_to({:controller => 'student_courses' , :action => 'index' }, {:class => 'btn btn-default'}) do%>
+                <i>Back</i><%end%>
         <%	 end %>
 <% else%>
-      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+        <%=link_to({:controller => 'instructors' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
 <%end%>
     </nav>
 </div>

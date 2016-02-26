@@ -4,13 +4,20 @@
     <div class = "side_bar">
       <div class="list-group">
         <div class="btn-group-vertical" role="group" aria-label="...">
-          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View Profile',id: @user.id, :controller => 'users',:action =>'show')  %></button>
-          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My Active Courses',:controller => 'students',:action =>'viewcourses')  %></button>
-          <button type="button" class="btn btn-default navbar-btn"><%=link_to('View My History',:controller => 'student_courses',:action =>'studenthistory',id: @user.id )  %></button>
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Search/View Courses', :controller => 'students' , :action => 'searchquery')%></button>
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('View my Requests', :controller => 'students' , :action => 'showmyrequests')%></button>
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Create New Message', :controller => 'messages' , :action => 'new')%></button>
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('View my Messages', :controller => 'messages' , :action => 'show')%></button>
+          <%=link_to({id: @user.id, :controller => 'users',:action =>'show'}, {:class => 'btn btn-default'}) do%>
+              <i>View Profile</i><%end%>
+          <%=link_to({:controller => 'students',:action =>'viewcourses'}, {:class => 'btn btn-default'}) do%>
+              <i>View My Active Courses</i><%end%>
+          <%=link_to({:controller => 'student_courses',:action =>'studenthistory',id: @user.id }, {:class => 'btn btn-default'}) do%>
+              <i>View My History</i><%end%>
+          <%=link_to({:controller => 'students' , :action => 'searchquery'}, {:class => 'btn btn-default'}) do%>
+              <i>Search/View Courses</i><%end%>
+          <%=link_to({ :controller => 'students' , :action => 'showmyrequests'}, {:class => 'btn btn-default'}) do%>
+              <i>View my Requests</i><%end%>
+          <%=link_to({:controller => 'messages' , :action => 'new'}, {:class => 'btn btn-default'}) do%>
+              <i>Create New Message</i><%end%>
+          <%=link_to({ :controller => 'messages' , :action => 'show'}, {:class => 'btn btn-default'}) do%>
+              <i>View my Messages</i><%end%>
         </div>
       </div>
     </div>

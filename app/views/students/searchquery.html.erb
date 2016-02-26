@@ -19,8 +19,8 @@
           </ul>
           <button class="btn btn-default navbar-btn" type="submit" ><a>Search</a></button>
           <%@courses = Course.all %>
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Show All Courses', :controller => 'courses' , :action => 'index')%></button>
-
+          <%=link_to({:controller => 'courses' , :action => 'index'}, {:class => 'btn btn-default'}) do%>
+              <i>Show All Courses</i><%end%>
         </div>
     <% end %>
 </center>

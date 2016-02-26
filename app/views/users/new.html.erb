@@ -52,6 +52,7 @@
   </center>
 <nav class="navbar navbar-default">
   <div class="btn-group-vertical" role="group" aria-label="...">
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+    <%=link_to({:controller => 'admins' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+        <i>Back</i><%end%>
   </div>
 </nav>

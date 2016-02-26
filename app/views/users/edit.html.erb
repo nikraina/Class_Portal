@@ -43,15 +43,21 @@
   <nav class="navbar navbar-default">
     <% if @user == @currentuser %>
         <%	 if @currentuser.is_admin %>
-            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Users', :controller => 'users' , :action => 'index')%></button>
+            <%=link_to({:controller => 'users' , :action => 'index'}, {:class => 'btn btn-default'}) do%>
+                <i>Back to View All Users</i><%end%>
              <%	end  %>
-            <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'users' , :action => 'show')%></button>
+            <%=link_to({:controller => 'users' , :action => 'show'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <% else %>
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Users', :controller => 'users' , :action => 'index')%></button>
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Instructors', :controller => 'admins' , :action => 'showinstructors')%></button>
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Students', :controller => 'admins' , :action => 'showstudents')%></button>
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to View All Admins', :controller => 'admins' , :action => 'showadmins')%></button>
-  <%	 end %>
+        <%=link_to({ :controller => 'users' , :action => 'index'}, {:class => 'btn btn-default'}) do%>
+            <i>Back to View All Users</i><%end%>
+        <%=link_to({ :controller => 'admins' , :action => 'showinstructors'}, {:class => 'btn btn-default'}) do%>
+            <i>Back to View All Instructors</i><%end%>
+        <%=link_to({ :controller => 'admins' , :action => 'showstudents'}, {:class => 'btn btn-default'}) do%>
+            <i>Back to View All Students</i><%end%>
+        <%=link_to({:controller => 'admins' , :action => 'showadmins'}, {:class => 'btn btn-default'}) do%>
+            <i>Back to View All Admins</i><%end%>
+    <%	 end %>
   </nav>
 </div>
 

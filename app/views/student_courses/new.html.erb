@@ -41,9 +41,11 @@
 <div>
   <nav class="navbar navbar-default">
     <%if !params[:student] %>
-      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+        <%=link_to({ :controller => 'admins' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <%else %>
-      <button type="button" class="btn btn-default navbar-btn">  <%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+        <%=link_to({ :controller => 'students' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <% end %>
   </nav>
 </div>

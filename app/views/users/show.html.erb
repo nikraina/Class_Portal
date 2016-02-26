@@ -27,12 +27,16 @@
   </center>
 </div>
 <nav class="navbar navbar-default">
-  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Edit',id: @user.id, :controller => 'users' , :action => 'edit')%></button>
+  <%=link_to({id: @user.id, :controller => 'users' , :action => 'edit'}, {:class => 'btn btn-default'}) do%>
+      <i>Edit</i><%end%>
   <% if @currentuser.is_admin %>
-      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+      <%=link_to({:controller => 'admins' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+          <i>Back</i><%end%>
   <% elsif @currentuser.is_instructor%>
-      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+      <%=link_to({:controller => 'instructors' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+          <i>Back</i><%end%>
   <%else %>
-      <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+      <%=link_to({:controller => 'students' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+          <i>Back</i><%end%>
   <%end%>
 </nav>
