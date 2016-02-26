@@ -41,7 +41,7 @@
   </center>
 </div>
 <nav class="navbar navbar-default">
-  <div class="btn-group-vertical" role="group" aria-label="...">
+  <div>
     <%=link_to({:controller => 'students' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
         <i>Back</i><%end%>
     <%@courses = Course.all %>

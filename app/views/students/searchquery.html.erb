@@ -17,7 +17,7 @@
           <ul>
             <%= text_field_tag :is_active, params[:is_active], class: "span2", placeholder: "Is Active> true or false"  %>
           </ul>
-          <button class="btn btn-default navbar-btn" type="submit" ><a>Search</a></button>
+          <button class="btn btn-default navbar-btn" type="submit" ><i>Search</i></button>
           <%@courses = Course.all %>
           <%=link_to({:controller => 'courses' , :action => 'index'}, {:class => 'btn btn-default'}) do%>
               <i>Show All Courses</i><%end%>
