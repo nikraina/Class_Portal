@@ -36,14 +36,19 @@
 </div>
 <div>
   <nav class="navbar navbar-default">
-        <% if @user.is_admin %>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to Display All Courses', :controller => 'courses' , :action => 'index')%></button>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Edit/Add Materials', :controller => 'courses' , :action => 'edit', id: @course.id )%></button>
-  <% elsif @user.is_instructor%>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back to Courses', :controller => 'instructors' , :action => 'viewinscourses')%></button>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Edit/Add Materials', :controller => 'courses' , :action => 'edit', id: @course.id )%></button>
-  <%	else  %>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+    <% if @user.is_admin %>
+        <%=link_to({:controller => 'courses' , :action => 'index'}, {:class => 'btn btn-default'}) do%>
+            <i>Back to Display All Courses</i><%end%>
+        <%=link_to({ :controller => 'courses' , :action => 'edit', id: @course.id}, {:class => 'btn btn-default'}) do%>
+            <i>Edit/Add Materials</i><%end%>
+    <% elsif @user.is_instructor%>
+        <%=link_to({ :controller => 'instructors' , :action => 'viewinscourses'}, {:class => 'btn btn-default'}) do%>
+            <i>Back to Courses</i><%end%>
+        <%=link_to({:controller => 'courses' , :action => 'edit', id: @course.id }, {:class => 'btn btn-default'}) do%>
+            <i>Edit/Add Materials</i><%end%>
+    <%	else  %>
+        <%=link_to({ :controller => 'students' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <%end%>
   </nav>
 </div>

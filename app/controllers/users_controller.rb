@@ -77,7 +77,7 @@ class UsersController < ApplicationController
         end
     elsif !@user.is_instructor and !@user.is_admin
         @studentcourse = StudentCourse.find_by_email(@user.email)
-        if !@studentcourse.nil
+        if !@studentcourse.nil?
           @studentcourse.destroy
         end
         @user.destroy

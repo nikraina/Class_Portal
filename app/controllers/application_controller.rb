@@ -11,4 +11,38 @@ class ApplicationController < ActionController::Base
       return false
     end
   end
+
+  def logged_in_admin
+    @user = User.find_by_id(session[:id])
+    if @user.is_admin
+      return true
+    elsif @user.is_instructor
+      redirect_to(:controller => 'instructors', :action => 'home')
+    else
+      redirect_to(:controller => 'students', :action => 'home')
+    end
+  end
+
+  def logged_in_student
+    @user = User.find_by_id(session[:id])
+    if !@user.is_admin and !@user.is_instructor
+      return true
+    elsif @user.is_instructor
+      redirect_to(:controller => 'instructors', :action => 'home')
+    else
+      redirect_to(:controller => 'admins', :action => 'home')
+    end
+  end
+
+  def logged_in_instructor
+    @user = User.find_by_id(session[:id])
+    if @user.is_instructor
+      return true
+    elsif @user.is_admin
+      redirect_to(:controller => 'admins', :action => 'home')
+    else
+      redirect_to(:controller => 'students', :action => 'home')
+    end
+  end
+
 end

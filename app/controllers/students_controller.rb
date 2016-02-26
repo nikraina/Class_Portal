@@ -1,5 +1,5 @@
 class StudentsController < UsersController
-  before_action :logged_in
+  before_action :logged_in, :logged_in_student
 
   def home
 

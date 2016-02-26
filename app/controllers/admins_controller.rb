@@ -1,5 +1,5 @@
 class AdminsController < UsersController
-  before_action :logged_in
+  before_action :logged_in, :logged_in_admin
 
   def home
    @user = User.find_by_id(session[:id])

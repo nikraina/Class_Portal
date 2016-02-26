@@ -1,5 +1,5 @@
 class InstructorsController < UsersController
-  before_action :logged_in
+  before_action :logged_in, :logged_in_instructor
 
   def home
 

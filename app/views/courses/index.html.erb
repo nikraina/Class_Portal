@@ -29,13 +29,16 @@
                 <td><%= course.end_date %><br></td>
                 <%if @user.is_admin %>
                     <% if course.is_active %>
-                      <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show', id: course.id , :action => 'show' %></button></td>
-                      <td><button type="button" class="btn btn-default navbar-btn"><%= link_to'Edit', :controller => 'courses' , :action => 'edit', id: course.id%></button></td>
-                    <% end %>
-                  <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: course.id, :action => 'destroy' %></button></td>
-
-                <%elsif course.is_active%>
-                    <td><button type="button" class="btn btn-default navbar-btn"><%= link_to('Enroll', :controller => 'students', :action => 'enrollmentrequest', :course_id => course.course_id)  %></button></td>
+                        <td> <%=link_to({id: course.id , :action => 'show'}, {:class => 'btn btn-default'}) do%>
+                              <i>Show</i><%end%></td>
+                        <td> <%=link_to({ :controller => 'courses' , :action => 'edit', id: course.id}, {:class => 'btn btn-default'}) do%>
+                              <i>Edit</i><%end%></td>
+                       <% end %>
+                        <td> <%=link_to({id: course.id, :action => 'destroy'}, {:class => 'btn btn-default'}) do%>
+                               <i>Delete</i><%end%></td>
+                    <%elsif course.is_active%>
+                    <td> <%=link_to({ :controller => 'students', :action => 'enrollmentrequest', :course_id => course.course_id}, {:class => 'btn btn-default'}) do%>
+                          <i>Enroll</i><%end%></td>
                 <% end%>
               </tr>
           <% end %>
@@ -47,9 +50,11 @@
 <nav class="navbar navbar-default">
   <div class="btn-group-vertical" role="group" aria-label="...">
     <%if @user.is_admin %>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+        <%=link_to({ :controller => 'admins' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <%else%>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+        <%=link_to({:controller => 'students' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <%end%>
   </div>
 </nav>

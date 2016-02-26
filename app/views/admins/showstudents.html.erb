@@ -16,9 +16,12 @@
               <tr>
                 <td><%= user.email %><br></td>
                 <td><%= user.name %><br></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit', :controller => 'users', :action => 'edit',id: user.id %></button><br></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Delete',id: user.id,:controller => 'users', :action => 'destroy' %></button><br></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%=link_to('History',:controller => 'student_courses',:action =>'studenthistory',id: user.id )  %></button></td>
+                <td><%=link_to({:controller => 'users', :action => 'edit',id: user.id}, {:class => 'btn btn-default'}) do%>
+                      <i>Edit</i><%end%></td>
+                <td><%=link_to({id: user.id,:controller => 'users', :action => 'destroy' }, {:class => 'btn btn-default'}) do%>
+                      <i>Delete</i><%end%></td>
+                <td><%=link_to({:controller => 'student_courses',:action =>'studenthistory',id: user.id }, {:class => 'btn btn-default'}) do%>
+                      <i>View History</i><%end%></td>
               </tr>
           <%  end %>
         <% end %>
@@ -28,5 +31,6 @@
   </center>
 </div>
 <nav class="navbar navbar-default">
-  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
+  <%=link_to({:controller => 'admins' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+      <i>Back</i><%end%>
 </nav>

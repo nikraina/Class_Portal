@@ -51,6 +51,7 @@
 </div>
 <div>
   <nav class="navbar navbar-default">
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'courses' , :action => 'show',id: @course.id)%></button>
+    <%=link_to({:controller => 'courses' , :action => 'show',id: @course.id }, {:class => 'btn btn-default'}) do%>
+        <i>Back</i><%end%>
   </nav>
 </div>

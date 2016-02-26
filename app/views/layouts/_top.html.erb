@@ -6,6 +6,8 @@
         <% @user = User.find(session[:id])%>
         <ul class="nav navbar-nav navbar-right">
           <% if @user.is_admin %>
+              <%=link_to({:controller => 'admins', :action => 'home'}, {:class => 'btn btn-default'}) do%>
+                  <b>Home</b><%end%>
               <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'admins', :action => 'home' ) %></button>
           <% elsif @user.is_instructor %>
               <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'instructors', :action => 'home' ) %></button>
