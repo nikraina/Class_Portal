@@ -8,19 +8,23 @@
           <% if @user.is_admin %>
               <%=link_to({:controller => 'admins', :action => 'home'}, {:class => 'btn btn-default'}) do%>
                   <b>Home</b><%end%>
-              <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'admins', :action => 'home' ) %></button>
           <% elsif @user.is_instructor %>
-              <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'instructors', :action => 'home' ) %></button>
-          <%	else  %>
-              <button type="button" class="btn btn-default navbar-btn"><%= link_to('Home',:controller => 'students', :action => 'home' ) %></button>
-          <%	 end %>
+              <%=link_to({:controller => 'instructors', :action => 'home'}, {:class => 'btn btn-default'}) do%>
+                  <b>Home</b><%end%>
+          <%else  %>
+              <%=link_to({:controller => 'students', :action => 'home'}, {:class => 'btn btn-default'}) do%>
+                  <b>Home</b><%end%>
+          <%end %>
 
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('logout',:controller => 'home', :action => 'login' ) %></button>
+          <%=link_to({:controller => 'home', :action => 'login'}, {:class => 'btn btn-default'}) do%>
+              <b>Logout</b><%end%>
         </ul>
     <%	 else %>
         <ul class="nav navbar-nav navbar-right">
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Login',:controller => 'home', :action => 'login' ) %></button>
-          <button type="button" class="btn btn-default navbar-btn"><%= link_to('Signup',:controller => 'users', :action => 'new' ) %></button>
+          <%=link_to({:controller => 'home', :action => 'login'}, {:class => 'btn btn-default'}) do%>
+              <b>Logint</b><%end%>
+          <%=link_to({:controller => 'users', :action => 'new'}, {:class => 'btn btn-default'}) do%>
+              <b>Signup</b><%end%>
         </ul>
     <%	 end %>
 

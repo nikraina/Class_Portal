@@ -30,7 +30,8 @@
                     <td><%= student_course.is_curr_enrolled %><br></td>
                     <td><%= student_course.has_requested %><br></td>
                     <td><%= student_course.is_denied %><br></td>
-                    <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Grades', id: student_course.id,:controller => 'student_courses', action: 'edit'%></button></td>
+                    <td><%=link_to({id: student_course.id,:controller => 'student_courses', action: 'edit'}, {:class => 'btn btn-default'}) do%>
+                          <i>Edit/Add Grades</i><%end%></td>
                   </tr>
                 <% end %>
             <%	 end %>
@@ -42,5 +43,6 @@
   </center>
 </div>
 <nav class="navbar navbar-default">
-  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+  <%=link_to({:controller => 'instructors' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+      <i>Back</i><%end%>
 </nav>

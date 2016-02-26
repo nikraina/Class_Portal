@@ -28,7 +28,8 @@
                   <td><%= student_course.is_curr_enrolled %><br></td>
                   <td><%= student_course.has_requested %><br></td>
                   <td><%= student_course.is_denied %><br></td>
-                  <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Enroll',id: student_course.id, :controller => 'student_courses' ,action: 'edit' , :viewrequestsadmin => true %><br></button></td>
+                  <td><%=link_to({id: student_course.id, :controller => 'student_courses' ,action: 'edit' , :viewrequestsadmin => true}, {:class => 'btn btn-default'}) do%>
+                        <i>Edit/Enroll</i><%end%></td>
                   </tr>
                 <%end %>
               <% end %>
@@ -40,6 +41,7 @@
 </div>
 <div>
   <nav class="navbar navbar-default">
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+    <%=link_to({:controller => 'instructors' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+        <i>Back</i><%end%>
   </nav>
 </div>

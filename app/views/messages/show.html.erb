@@ -21,8 +21,9 @@
                       <% @sender.each do |sender| %>
                           <td><%= sender.name %><br></td>
                           <td><%= message.msg_text %><br></td>
-                          <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Reply', :controller => 'messages', :action => 'showreply',id: sender.id %></button><br></td>
-                    <%end %>
+                          <td><%=link_to({:controller => 'messages', :action => 'showreply',id: sender.id }, {:class => 'btn btn-default'}) do%>
+                                <i>Reply</i><%end%></td>
+                      <%end %>
                     </tr>
                 <% end %>
             <% end %>
@@ -62,9 +63,11 @@
 <nav class="navbar navbar-default">
   <div class="btn-group-vertical" role="group" aria-label="...">
     <% if @currentuser.is_instructor %>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
+        <%=link_to({:controller => 'instructors' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <% else %>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'students' , :action => 'home')%></button>
+        <%=link_to({:controller => 'students' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
     <%end %>
   </div>
 </nav>

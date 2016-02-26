@@ -30,10 +30,14 @@
                 <td><%= @course.is_active %><br></td>
                 <td><%= @course.start_date %><br></td>
                 <td><%= @course.end_date %><br></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Edit/Add Materials', id: @course.id , :controller => 'courses', action:  'edit'  %></td></button>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'View All Students in Course', id: @course.id , :controller => 'student_courses', :action => 'studentcourses' %></button></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Show Course Details', id: @course.id , :controller => 'courses', :action => 'show' %></button></td>
-                <td><button type="button" class="btn btn-default navbar-btn"><%= link_to 'Request Inactivation', :course_id => @course.course_id , :controller => 'courses', :action => 'req_inactivation' %></button></td>
+                <td><%=link_to({id: @course.id , :controller => 'courses', action:  'edit'}, {:class => 'btn btn-default'}) do%>
+                      <i>Edit/Add Materials</i><%end%></td>
+                <td><%=link_to({id: @course.id , :controller => 'student_courses', :action => 'studentcourses' }, {:class => 'btn btn-default'}) do%>
+                      <i>View All Students in Course</i><%end%></td>
+                <td><%=link_to({id: @course.id , :controller => 'courses', :action => 'show' }, {:class => 'btn btn-default'}) do%>
+                      <i>Show Course Details</i><%end%></td>
+                <td><%=link_to({:course_id => @course.course_id , :controller => 'courses', :action => 'req_inactivation'}, {:class => 'btn btn-default'}) do%>
+                      <i>Request Inactivation</i><%end%></td>
               </tr>
             <% end %>
           <% end %>
@@ -44,6 +48,7 @@
   </center>
 </div>
 <nav class="navbar navbar-default">
-  <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
-  </nav>
+  <%=link_to({:controller => 'instructors' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+      <i>Back</i><%end%>
+</nav>
 

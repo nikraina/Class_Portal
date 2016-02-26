@@ -33,10 +33,12 @@
 <div>
   <% @currentuser = User.find_by_id(session[:id])%>
   <nav class="navbar navbar-default">
-    <%	 if @currentuser.is_admin %>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'admins' , :action => 'home')%></button>
-    <%	 else %>
-        <button type="button" class="btn btn-default navbar-btn"><%= link_to('Back', :controller => 'instructors' , :action => 'home')%></button>
-    <%	 end %>
+    <%if @currentuser.is_admin %>
+        <%=link_to({:controller => 'admins' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
+    <%else %>
+        <%=link_to({:controller => 'instructors' , :action => 'home'}, {:class => 'btn btn-default'}) do%>
+            <i>Back</i><%end%>
+    <%end %>
   </nav>
 </div>
