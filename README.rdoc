@@ -16,83 +16,83 @@ Password: master
 (Please don't change these credentials. We don't want our reviewers to experience troubles because of your mischeif. If any two reviewers are simultaneously reviewing and one reviewer edits one of the user details at the same time when other reviewer is accessing that particular user, the system might function improperly and you will get a notice "Something went wrong" Heroku Error page. )
 
 ==Admin
-1. Adding a User:
-	- Click on "Add New Users" tab on the left hand side of the screen.
+#1. Adding a User:
+- Click on "Add New Users" tab on the left hand side of the screen.
 	
-	- Fill up the form. Select checkbox "Is Admin??" if the user to be added is admin or "Is Instructor??" if the user to be added 	  is instructor or both if the user to be added is both an admin and an instructor.
+- Fill up the form. Select checkbox "Is Admin??" if the user to be added is admin or "Is Instructor??" if the user to be added 	  is instructor or both if the user to be added is both an admin and an instructor.
 
-2. View/Edit/Delete Users:
-	- Click on "Display All Users" tab on the left hand side of the screen.
+#2. View/Edit/Delete Users:
+- Click on "Display All Users" tab on the left hand side of the screen.
 	
-	- You can now view a comprehensive list of all users. Click on 'Edit' to edit the details of the users or on "Delete" to delete a 			particular user. Note that you cannot delete your won profile or super admin.
+- You can now view a comprehensive list of all users. Click on 'Edit' to edit the details of the users or on "Delete" to delete a 	particular user. Note that you cannot delete your won profile or super admin.
 	
-	- We have also provided separate buttons to view/edit/delete only admins. Click on "Display All Admins". Similarly, you can view a 			separate list of only students and only instructors. Click on "Display All Students" and "Display All Instructors" respectively to 		view/edit/delete.
+- We have also provided separate buttons to view/edit/delete only admins. Click on "Display All Admins". Similarly, you can view a 	separate list of only students and only instructors. Click on "Display All Students" and "Display All Instructors" respectively to 	view/edit/delete.
 	
-	- To view history of students click on "Display All Students" button. You will land on a page displaying list of all students. Then 		click on "View History" button for a particular student to view history of past courses taken by that student.
+- To view history of students click on "Display All Students" button. You will land on a page displaying list of all students. Then 	click on "View History" button for a particular student to view history of past courses taken by that student.
 
-3. View/Edit Own Profile:
-	- Click on "View Profile" tab on the left hand side of the screen.
+#3. View/Edit Own Profile:
+- Click on "View Profile" tab on the left hand side of the screen.
 	
-	- You will see your profile.
+- You will see your profile.
 	
-	- To edit profile, click on "Edit Profile" button at the bottom of the page.
+- To edit profile, click on "Edit Profile" button at the bottom of the page.
 	
-4. Adding a New Course:
-	- Click on "Add New Courses" tab on the left hand side of the screen.
+#4. Adding a New Course:
+- Click on "Add New Courses" tab on the left hand side of the screen.
 	
-	- Fill up the form details such Course (Course ID), Instructor email, Title, Description, Materials, Start-end dates  Select "Is 				Active??" if the course is active.
+- Fill up the form details such Course (Course ID), Instructor email, Title, Description, Materials, Start-end dates  Select "Is 	Active??" if the course is active.
 	
-	- Click on the 'Create' button.
+- Click on the 'Create' button.
 
-5. View/Edit/Delete Courses:
-	- Click on "Display All Courses" tab on the left hand side of the screen.
+#5. View/Edit/Delete Courses:
+- Click on "Display All Courses" tab on the left hand side of the screen.
 	
-	- You can now view a comprehensive list of all courses. Click on 'Edit' to edit the details of the users or on "Delete" to delete a 		particular user.
+- You can now view a comprehensive list of all courses. Click on 'Edit' to edit the details of the users or on "Delete" to delete a 	particular user.
 
-6. Enroll/View Enrolled Students:
-	- Click on "View Enrollment Requests" to view and approve enrollment requests. You can approve enrollment by clicking on "Edit" 				button and then selecting checkbox "Is Enrolled". After enrollment request is approved, the student is 		automatically registered 		for the course.
+#6. Enroll/View Enrolled Students:
+- Click on "View Enrollment Requests" to view and approve enrollment requests. You can approve enrollment by clicking on "Edit" 	button and then selecting checkbox "Is Enrolled". After enrollment request is approved, the student is automatically registered 	for the course.
 	
-	- To directly add students to courses, click on "Enroll Students to Courses" button and then select student's email id and course id 		to add that particular student to the course.
+- To directly add students to courses, click on "Enroll Students to Courses" button and then select student's email id and course id 	to add that particular student to the course.
 	
-	- To view list of all enrolled students and their grades and related details, click on "View All Enrolled Students" on the left hand 		side of the page.
+- To view list of all enrolled students and their grades and related details, click on "View All Enrolled Students" on the left hand 	side of the page.
 	
 ==Instructor
 All functionalities of Instructors are similar to Admin. You can follow the same process described in the Admin Section.
 
-1. Request To Make a Course Inactive [BONUS]:
-	- Click on "View My Active Courses" button and hit "Request Inactivation" button for requesting to make a course inactive.
+#1. Request To Make a Course Inactive [BONUS]:
+- Click on "View My Active Courses" button and hit "Request Inactivation" button for requesting to make a course inactive.
 
 ==Student
-1. Sign up:
-	- Click on 'Sogn Up' button and add details such as email id, password to sign up.
+#1. Sign up:
+- Click on 'Sogn Up' button and add details such as email id, password to sign up.
 
-2. View/Edit Own Profile:
-	- Click on "View Profile" tab on the left hand side of the screen.
+#2. View/Edit Own Profile:
+- Click on "View Profile" tab on the left hand side of the screen.
 
-	- You will see your profile.
+- You will see your profile.
 
-	- To edit profile, click on "Edit Profile" button at the bottom of the page.
+- To edit profile, click on "Edit Profile" button at the bottom of the page.
 
-3. View Active Courses / View History:
-	- Click on "View My Courses" button to view all the current courses.
+#3. View Active Courses / View History:
+- Click on "View My Courses" button to view all the current courses.
 
-	- Click on "View My History" button to view all the past courses. You can also view grade here.
+- Click on "View My History" button to view all the past courses. You can also view grade here.
 	
-4. Search/View/Enroll Courses:
-	- Click on "Search/View Courses" button and enter any of the search terms to view list of all related courses. You can enroll for a 		particular course by clicking on "Enroll" button.
+#4. Search/View/Enroll Courses:
+- Click on "Search/View Courses" button and enter any of the search terms to view list of all related courses. You can enroll for a 	particular course by clicking on "Enroll" button.
 
-	- Note that search terms are case-sensetive.
+- Note that search terms are case-sensetive.
 
-5. Drop a Course:
-	- Click on "View My Courses" button on left hand side of the page. Then click on "Drop" button for the corresponsing course to drop 		from that course.
+#5. Drop a Course:
+- Click on "View My Courses" button on left hand side of the page. Then click on "Drop" button for the corresponsing course to drop 	from that course.
 	
-6. Send/View Private Messages [BONUS]:
-	- Click on "Create New Messages" to send a private message to the instructor.
+#6. Send/View Private Messages [BONUS]:
+- Click on "Create New Messages" to send a private message to the instructor.
 
-	- Click on "View My Messages" button to view all sent and recieved messages.
+- Click on "View My Messages" button to view all sent and recieved messages.
 
-7. Email for notification [BONUS]:
-	- If the course is inactive, you can click on "Notify Me On Activation!" button to request email if the course becomes active.
+#7. Email for notification [BONUS]:
+- If the course is inactive, you can click on "Notify Me On Activation!" button to request email if the course becomes active.
 
 ==What ifs...
 1. If you try to sign up using email ids already used, you will get an error message "User cannot be created".
