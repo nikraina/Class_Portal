@@ -45,6 +45,7 @@ class CoursesController < ApplicationController
       flash[:notice]="Course could not be edited!!"
       redirect_to(:controller => 'courses', :action => 'show')
     end
+    #send_mail(@course)
   end
 
 
@@ -91,6 +92,30 @@ class CoursesController < ApplicationController
     else
       flash[:notice]="The course could not be marked inactive"
       redirect_to(:controller => 'admins', :action => 'inactivation_req')
+    end
+  end
+
+  def send_mail(course)
+    @course = course
+    @notifications = Notification.find_by_course_id(@course.course_id)
+    @notifications.each do |notification|
+      @user = User.find_by_email(notification.email)
+      StudentMailer.notify_email(@user, @course).deliver!
+    end
+    @notifications.destroy
+  end
+
+  def notify
+    @notification = Notification.new
+    @notification.course_id = params[:course_id]
+    @currentuser = User.find(session[:id])
+    @notification.email = @currentuser.email
+    if @notification.save
+      flash[:notice]="Notification request Accepted"
+      redirect_to(:controller => 'students', :action => 'home')
+    else
+      flash[:notice]="You have already created the corresponding request"
+      redirect_to(:controller => 'students', :action => 'home')
     end
   end
 

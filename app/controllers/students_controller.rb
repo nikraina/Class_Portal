@@ -32,7 +32,7 @@ class StudentsController < UsersController
 
   def showmyrequests
     @user = User.find(session[:id])
-    @student_courses = StudentCourse.where("email = ? AND (has_requested = ? OR is_denied = ?)", @user.email, true, true)
+    @student_courses = StudentCourse.where("email = ? AND (has_requested = ? AND is_denied = ?)", @user.email, true, false)
   end
 
   def enrollmentrequest

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160226013754) do
+ActiveRecord::Schema.define(version: 20160227021333) do
 
   create_table "course_inactive_requests", force: true do |t|
     t.string   "course_id",  limit: 100, null: false
@@ -44,6 +44,13 @@ ActiveRecord::Schema.define(version: 20160226013754) do
     t.string   "reciever_email", limit: 100, null: false
     t.string   "msg_text"
     t.boolean  "is_req"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "notifications", force: true do |t|
+    t.string   "course_id",  limit: 100, null: false
+    t.string   "email",      limit: 100
     t.datetime "created_at"
     t.datetime "updated_at"
   end

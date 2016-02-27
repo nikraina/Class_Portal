@@ -32,6 +32,9 @@
               <%if course.is_active %>
                   <td><%=link_to({ :controller => 'students', :action => 'enrollmentrequest', :course_id => course.course_id}, {:class => 'btn btn-default'}) do%>
                         <i>Enroll</i><%end%></td>
+              <%else %>
+                  <td><%=link_to({ :controller => 'courses', :action => 'notify', :course_id => course.course_id}, {:class => 'btn btn-default'}) do%>
+                        <i>Notify Me on Activation</i><%end%></td>
               <%end%>
             </tr>
         <% end %>

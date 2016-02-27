@@ -42,6 +42,10 @@ Portal::Application.routes.draw do
   get 'courses/req_inactivation' => 'courses#req_inactivation'
   post 'courses/make_inactive' => 'courses#make_inactive'
   get 'courses/make_inactive' => 'courses#make_inactive'
+  post 'courses/notify' => 'courses#notify'
+  get 'courses/notify' => 'courses#notify'
+  post 'courses/send_mail' => 'courses#send_mail'
+  get 'courses/send_mail' => 'courses#send_mail'
 
 
 
