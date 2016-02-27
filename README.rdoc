@@ -113,3 +113,11 @@ All functionalities of Instructors are similar to Admin. You can follow the same
 - User controller test
 
 - bundle exec rake test
+
+==Bonus
+
+- Enrollment active change request email works on dev environments using ruby mail gem, on production the user will get a private message instead.
+
+- Users can private message each other through the message tab
+
+- Instructors can request to make a course inactive and the admin can see it in enrollment requests tab
