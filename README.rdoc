@@ -11,7 +11,7 @@ Preconfigured Super-Admin Credentials:
 
 Email: master@master.com 
 
-Password: master 
+Password: admin 
 
 (Please don't change these credentials. We don't want our reviewers to experience troubles because of your mischeif. If any two reviewers are simultaneously reviewing and one reviewer edits one of the user details at the same time when other reviewer is accessing that particular user, the system might function improperly and you will get a notice "Something went wrong" Heroku Error page. )
 
